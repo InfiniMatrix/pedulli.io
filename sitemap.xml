@@ -7,6 +7,7 @@
 <url><loc>https://pedulli.io/security/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/pilot/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/dashboard/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://pedulli.io/faq/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/about/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/contact/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/it/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -16,6 +17,7 @@
 <url><loc>https://pedulli.io/it/security/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/it/pilot/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/it/dashboard/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://pedulli.io/it/faq/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/it/about/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/it/contact/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/de/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -25,6 +27,7 @@
 <url><loc>https://pedulli.io/de/security/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/de/pilot/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/de/dashboard/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://pedulli.io/de/faq/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/de/about/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/de/contact/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/fr/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -34,6 +37,7 @@
 <url><loc>https://pedulli.io/fr/security/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/fr/pilot/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/fr/dashboard/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://pedulli.io/fr/faq/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/fr/about/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/fr/contact/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/es/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -43,6 +47,7 @@
 <url><loc>https://pedulli.io/es/security/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/es/pilot/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/es/dashboard/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://pedulli.io/es/faq/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/es/about/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://pedulli.io/es/contact/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 </urlset>

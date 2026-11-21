@@ -5,4 +5,4 @@ Report vulnerabilities privately to francescopedulli@gmail.com. Do not publish e
 
 The public origin intentionally contains no source code, build scripts, debug data, source maps,
 secrets or server endpoints. Uploaded files stay in browser memory and are never transmitted.
-See /security/ for the control mapping and honest limits.
+See /security/ for the control mapping and honest limits. The browser module is a reduced demo; stronger configurations are available only under NDA evaluation or licensed deployment.

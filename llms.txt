@@ -8,6 +8,7 @@ Compression runs locally in the browser; no file is uploaded. The public origin 
 - Security and control mapping: https://pedulli.io/security/
 - CTO and company pilot: https://pedulli.io/pilot/
 - Live dashboard: https://pedulli.io/dashboard/
+- FAQ: https://pedulli.io/faq/
 - About and CV: https://pedulli.io/about/
 - Contact: francescopedulli@gmail.com
 

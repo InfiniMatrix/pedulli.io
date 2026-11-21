@@ -45,6 +45,7 @@ p{color:var(--muted);max-width:72ch;margin:0 0 12px}
 .card{padding:22px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(160deg,var(--panel),#0a0e17);box-shadow:var(--shadow)}
 .card p{font-size:14px;margin:0}
 .card .num{display:block;color:var(--a);font:700 12px/1 ui-monospace,monospace;margin-bottom:12px;letter-spacing:.1em}
+.faq{display:grid;gap:10px}.faq details{padding:0 18px}.faq summary{cursor:pointer;padding:16px 0;font-weight:650;list-style:none}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:'+';float:right;color:var(--a)}.faq details[open] summary:after{content:'\2212'}.faq details p{padding:0 0 16px;color:var(--muted);margin:0}
 .callout{padding:26px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(135deg,rgba(94,234,212,.06),rgba(129,140,248,.06))}
 .callout h2{margin-top:0}
 table{width:100%;border-collapse:collapse;font-size:12.5px}
