@@ -27,12 +27,13 @@
 <div class="drop" id="drop"><span class="big" id="dropLabel">Datei ablegen oder auswählen</span><span id="fileName" class="mono" style="font-size:12px"></span>
 <input type="file" id="fileInput" accept="*/*"></div>
 <p class="note" id="fileNote" style="margin-top:14px">Bestes Verhältnis. Große Dateien können Minuten dauern. Limit 8 MB.</p>
+<p class="note" id="formatNote">Bereits komprimierte Formate (PDF, ZIP, JPG, PNG, MP4) zeigen meist geringere Gewinne.</p>
 <div class="cta-row"><button class="btn primary" id="compressBtn" type="submit">Komprimieren &amp; prüfen</button></div>
 <div class="progress" id="progress"><i></i></div><p class="note" id="status"></p></form>
 <div class="results" id="results" hidden><dl>
 <div><dt id="lInput">Input</dt><dd id="rInput"></dd></div><div><dt id="lArtifact">Artefakt</dt><dd id="rArtifact"></dd></div>
-<div><dt>Verhältnis</dt><dd id="rRatio"></dd></div><div><dt>Encode-Zeit</dt><dd id="rEncode"></dd></div>
-<div><dt>Decode-Zeit</dt><dd id="rDecode"></dd></div><div><dt>WASM-Heap</dt><dd id="rMem"></dd></div>
+<div><dt>Verhältnis</dt><dd id="rRatio"></dd></div><div id="encRow"><dt>Encode-Zeit</dt><dd id="rEncode"></dd></div>
+<div id="decRow"><dt>Decode-Zeit</dt><dd id="rDecode"></dd></div><div><dt>WASM-Heap</dt><dd id="rMem"></dd></div>
 <div><dt id="lShaIn">SHA-256 Eingabe</dt><dd id="rShaIn"></dd></div><div><dt id="lShaArt">SHA-256 Artefakt</dt><dd id="rShaArt"></dd></div>
 <div><dt id="lShaOut">SHA-256 Wiederherstellung</dt><dd id="rShaOut"></dd></div><div><dt>Prüfung</dt><dd id="rVerify"></dd></div></dl>
 <div class="cta-row"><a class="btn primary" id="download" href="#" hidden download>Artefakt herunterladen</a></div></div></section></main><footer class="wrap"><span>© 2026 Francesco Pedulli · Italy · Alle Rechte vorbehalten.</span>

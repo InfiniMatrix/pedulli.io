@@ -27,12 +27,13 @@
 <div class="drop" id="drop"><span class="big" id="dropLabel">Suelta o elige un archivo</span><span id="fileName" class="mono" style="font-size:12px"></span>
 <input type="file" id="fileInput" accept="*/*"></div>
 <p class="note" id="fileNote" style="margin-top:14px">Mejor ratio. Los archivos grandes pueden tardar minutos. Límite 8 MB.</p>
+<p class="note" id="formatNote">Los formatos ya comprimidos (PDF, ZIP, JPG, PNG, MP4) suelen mostrar ganancias menores.</p>
 <div class="cta-row"><button class="btn primary" id="compressBtn" type="submit">Comprimir y verificar</button></div>
 <div class="progress" id="progress"><i></i></div><p class="note" id="status"></p></form>
 <div class="results" id="results" hidden><dl>
 <div><dt id="lInput">Entrada</dt><dd id="rInput"></dd></div><div><dt id="lArtifact">Artefacto</dt><dd id="rArtifact"></dd></div>
-<div><dt>Ratio</dt><dd id="rRatio"></dd></div><div><dt>Tiempo encode</dt><dd id="rEncode"></dd></div>
-<div><dt>Tiempo decode</dt><dd id="rDecode"></dd></div><div><dt>Heap WASM</dt><dd id="rMem"></dd></div>
+<div><dt>Ratio</dt><dd id="rRatio"></dd></div><div id="encRow"><dt>Tiempo encode</dt><dd id="rEncode"></dd></div>
+<div id="decRow"><dt>Tiempo decode</dt><dd id="rDecode"></dd></div><div><dt>Heap WASM</dt><dd id="rMem"></dd></div>
 <div><dt id="lShaIn">SHA-256 entrada</dt><dd id="rShaIn"></dd></div><div><dt id="lShaArt">SHA-256 artefacto</dt><dd id="rShaArt"></dd></div>
 <div><dt id="lShaOut">SHA-256 restauración</dt><dd id="rShaOut"></dd></div><div><dt>Verificación</dt><dd id="rVerify"></dd></div></dl>
 <div class="cta-row"><a class="btn primary" id="download" href="#" hidden download>Descargar artefacto</a></div></div></section></main><footer class="wrap"><span>© 2026 Francesco Pedulli · Italy · Todos los derechos reservados.</span>
