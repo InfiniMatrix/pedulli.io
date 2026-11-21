@@ -1,0 +1,41 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Compression &amp; decoding dashboard · Pedulli</title><meta name="description" content="Cargue un archivo. El codec se ejecuta localmente como WebAssembly; nada se envía a un servidor. El artefacto se verifica con decodificación separada y SHA-256 antes de descargarlo.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://pedulli.io/es/dashboard/"><link rel="alternate" hreflang="en" href="https://pedulli.io/dashboard/"><link rel="alternate" hreflang="it" href="https://pedulli.io/it/dashboard/"><link rel="alternate" hreflang="de" href="https://pedulli.io/de/dashboard/"><link rel="alternate" hreflang="fr" href="https://pedulli.io/fr/dashboard/"><link rel="alternate" hreflang="es" href="https://pedulli.io/es/dashboard/"><link rel="alternate" hreflang="x-default" href="https://pedulli.io/dashboard/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Pedulli">
+<meta property="og:title" content="Compression &amp; decoding dashboard · Pedulli"><meta property="og:description" content="Cargue un archivo. El codec se ejecuta localmente como WebAssembly; nada se envía a un servidor. El artefacto se verifica con decodificación separada y SHA-256 antes de descargarlo.">
+<meta property="og:url" content="https://pedulli.io/es/dashboard/"><meta property="og:image" content="https://pedulli.io/assets/brand.svg">
+<meta property="og:locale" content="es_ES"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Compression &amp; decoding dashboard · Pedulli"><meta name="twitter:description" content="Cargue un archivo. El codec se ejecuta localmente como WebAssembly; nada se envía a un servidor. El artefacto se verifica con decodificación separada y SHA-256 antes de descargarlo."><meta name="twitter:image" content="https://pedulli.io/assets/brand.svg">
+<meta name="theme-color" content="#07090f"><meta name="referrer" content="no-referrer">
+<link rel="icon" href="/assets/mark.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/assets/mark.svg">
+<link rel="manifest" href="/manifest.webmanifest"><link rel="stylesheet" href="/assets/style.css">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self' 'wasm-unsafe-eval'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "Pedulli", "url": "https://pedulli.io", "founder": {"@type": "Person", "name": "Francesco Pedulli", "jobTitle": "Mathematician, Senior Software Engineer and Researcher", "worksFor": {"@type": "Organization", "name": "Cristallo Technologies"}, "email": "mailto:francescopedulli@gmail.com", "telephone": "+39 327 014 3909"}}, {"@type": "WebSite", "name": "Pedulli / SRD", "url": "https://pedulli.io", "publisher": {"@type": "Organization", "name": "Pedulli", "url": "https://pedulli.io", "founder": {"@type": "Person", "name": "Francesco Pedulli", "jobTitle": "Mathematician, Senior Software Engineer and Researcher", "worksFor": {"@type": "Organization", "name": "Cristallo Technologies"}, "email": "mailto:francescopedulli@gmail.com", "telephone": "+39 327 014 3909"}}, "inLanguage": ["en", "it", "de", "fr", "es"]}, {"@type": "SoftwareApplication", "name": "SRD", "applicationCategory": "UtilitiesApplication", "operatingSystem": "WebAssembly, modern browser", "description": "Exact lossless compression in one mode.", "url": "https://pedulli.io/technology/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does upload send my file to a server?", "acceptedAnswer": {"@type": "Answer", "text": "No. Compression runs locally in your browser using WebAssembly. The file is never transmitted."}}, {"@type": "Question", "name": "Is the source code published?", "acceptedAnswer": {"@type": "Answer", "text": "No. The public origin serves only prebuilt static files and a stripped WebAssembly module."}}, {"@type": "Question", "name": "How is a result verified?", "acceptedAnswer": {"@type": "Answer", "text": "By byte-exact restore in a separate decode and a matching SHA-256 of input and restored bytes."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pedulli.io/"}, {"@type": "ListItem", "position": 2, "name": "Compression & decoding dashboard", "item": "https://pedulli.io/es/dashboard/"}]}]}</script></head><body>
+<a class="skip" href="#main">Saltar al contenido</a><header class="site-head"><div class="wrap nav">
+<a class="brand" href="/es/"><img src="/assets/mark.svg" alt=""><b>PEDU<i>LLI</i></b></a>
+<nav aria-label="Idioma"><a href="/es/">Inicio</a><a href="/es/technology/">Tecnología</a><a href="/es/research/">Investigación</a><a href="/es/evidence/">Evidencia</a><a href="/es/security/">Seguridad</a><a href="/es/pilot/">Piloto</a><a href="/es/dashboard/" aria-current="page">Panel</a><a href="/es/about/">Sobre mí</a><a href="/es/contact/">Contacto</a></nav>
+<div class="langs" aria-label="Idioma"><a href="/dashboard/">EN</a><a href="/it/dashboard/">IT</a><a href="/de/dashboard/">DE</a><a href="/fr/dashboard/">FR</a><a href="/es/dashboard/" aria-current="true">ES</a></div>
+<a class="btn primary cta" href="/es/pilot/">Solicitar piloto</a>
+</div></header><main id="main"><nav class="crumbs wrap" aria-label="Breadcrumb"><a href="/es/">Inicio</a> / Panel</nav><section class="wrap pagehead"><div class="kicker">Panel</div><h1>Comprima un archivo en el navegador.</h1><p class="lead">Cargue un archivo. El codec se ejecuta localmente como WebAssembly; nada se envía a un servidor. El artefacto se verifica con decodificación separada y SHA-256 antes de descargarlo.</p>
+<p class="note">Solo local · nada sale de este dispositivo</p></section>
+<section class="wrap block"><div class="modes" role="group" aria-label="Mode">
+<button class="btn primary" id="modeCompress" type="button" aria-pressed="true">Comprimir</button>
+<button class="btn" id="modeDecode" type="button" aria-pressed="false">Decodificar artefacto</button></div>
+<form id="uploadForm" novalidate>
+<div class="drop" id="drop"><span class="big" id="dropLabel">Suelta o elige un archivo</span><span id="fileName" class="mono" style="font-size:12px"></span>
+<input type="file" id="fileInput" accept="*/*"></div>
+<p class="note" id="fileNote" style="margin-top:14px">Mejor ratio. Los archivos grandes pueden tardar minutos. Límite 8 MB.</p>
+<div class="cta-row"><button class="btn primary" id="compressBtn" type="submit">Comprimir y verificar</button></div>
+<div class="progress" id="progress"><i></i></div><p class="note" id="status"></p></form>
+<div class="results" id="results" hidden><dl>
+<div><dt id="lInput">Entrada</dt><dd id="rInput"></dd></div><div><dt id="lArtifact">Artefacto</dt><dd id="rArtifact"></dd></div>
+<div><dt>Ratio</dt><dd id="rRatio"></dd></div><div><dt>Tiempo encode</dt><dd id="rEncode"></dd></div>
+<div><dt>Tiempo decode</dt><dd id="rDecode"></dd></div><div><dt>Heap WASM</dt><dd id="rMem"></dd></div>
+<div><dt id="lShaIn">SHA-256 entrada</dt><dd id="rShaIn"></dd></div><div><dt id="lShaArt">SHA-256 artefacto</dt><dd id="rShaArt"></dd></div>
+<div><dt id="lShaOut">SHA-256 restauración</dt><dd id="rShaOut"></dd></div><div><dt>Verificación</dt><dd id="rVerify"></dd></div></dl>
+<div class="cta-row"><a class="btn primary" id="download" href="#" hidden download>Descargar artefacto</a></div></div></section></main><footer class="wrap"><span>© 2026 Francesco Pedulli · Italy · Todos los derechos reservados.</span>
+<span>Construye menos. Verifica más. · <a href="#main">Volver arriba ↑</a></span></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/assets/app.js"></script></body></html>

@@ -1,0 +1,1812 @@
+{
+ "generated": "2026-11-21",
+ "method": "Measured 2026-11-21 on the 42-file FOUR_CORPUS_RECORD ledger. Each (file, compressor) is a separate OS process, wrapped as `/usr/bin/time -v <compressor>`; wall time is the parent's time.monotonic() delta around that subprocess, peak RSS is parsed from GNU time's 'Maximum resident set size (kbytes)'. Per-run timeout 300 s (process group killed on timeout; null bytes+time+RSS and a reason are recorded). gzip: /usr/bin/gzip -9 -c (stdin-file argument, gzip header included). xz: /usr/bin/xz -9 -c (LZMA2 preset 9). zstd: one-shot Python ctypes call to libzstd.so.1 ZSTD_compress(dst, ZSTD_compressBound(n), src, n, level=22). brotli: one-shot Python ctypes call to libbrotlienc.so.1 BrotliEncoderCompress(quality=11, lgwin=22, mode=0=BROTLI_MODE_GENERIC, input_size, input, &out_size, dst), with dst capacity from BrotliEncoderMaxCompressedSize. zstd/brotli RSS therefore includes the Python interpreter baseline; gzip/xz RSS is the native tool. Runs are sequential (no parallel CPU contention). cmix_bar/paq_bar are published sizes copied from the ledger only; their encode time and RSS were NOT locally measured and are null (source='published_size_only'). Ledger input_bytes is blank for all silesia rows and the hutter enwik8 row; real on-disk sizes were used and the blank is recorded per row. Calgary/Canterbury input_bytes match on-disk sizes.",
+ "rows": [
+  {
+   "corpus": "calgary",
+   "file": "bib",
+   "input_bytes": 111261,
+   "ledger_input_bytes": 111261,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 34900,
+    "enc_s": 0.0141,
+    "enc_rss_kib": 1844
+   },
+   "xz": {
+    "bytes": 30588,
+    "enc_s": 0.0842,
+    "enc_rss_kib": 30640
+   },
+   "zstd": {
+    "bytes": 31924,
+    "enc_s": 0.1342,
+    "enc_rss_kib": 13708
+   },
+   "brotli": {
+    "bytes": 28380,
+    "enc_s": 0.2681,
+    "enc_rss_kib": 17556
+   },
+   "cmix_published_bytes": 17180,
+   "paq_published_bytes": 19574,
+   "cmix": {
+    "bytes": 17180,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 19574,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "calgary",
+   "file": "book1",
+   "input_bytes": 768771,
+   "ledger_input_bytes": 768771,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 312281,
+    "enc_s": 0.1091,
+    "enc_rss_kib": 2100
+   },
+   "xz": {
+    "bytes": 261116,
+    "enc_s": 0.6191,
+    "enc_rss_kib": 47400
+   },
+   "zstd": {
+    "bytes": 264372,
+    "enc_s": 0.4991,
+    "enc_rss_kib": 29848
+   },
+   "brotli": {
+    "bytes": 256323,
+    "enc_s": 1.3556,
+    "enc_rss_kib": 33976
+   },
+   "cmix_published_bytes": 173709,
+   "paq_published_bytes": 182977,
+   "cmix": {
+    "bytes": 173709,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 182977,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "calgary",
+   "file": "book2",
+   "input_bytes": 610856,
+   "ledger_input_bytes": 610856,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 206158,
+    "enc_s": 0.0585,
+    "enc_rss_kib": 1968
+   },
+   "xz": {
+    "bytes": 169824,
+    "enc_s": 0.2924,
+    "enc_rss_kib": 54568
+   },
+   "zstd": {
+    "bytes": 173859,
+    "enc_s": 0.211,
+    "enc_rss_kib": 29552
+   },
+   "brotli": {
+    "bytes": 165262,
+    "enc_s": 1.0484,
+    "enc_rss_kib": 30748
+   },
+   "cmix_published_bytes": 105918,
+   "paq_published_bytes": 113553,
+   "cmix": {
+    "bytes": 105918,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 113553,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "calgary",
+   "file": "geo",
+   "input_bytes": 102400,
+   "ledger_input_bytes": 102400,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 68414,
+    "enc_s": 0.0267,
+    "enc_rss_kib": 1844
+   },
+   "xz": {
+    "bytes": 53364,
+    "enc_s": 0.0842,
+    "enc_rss_kib": 42928
+   },
+   "zstd": {
+    "bytes": 64712,
+    "enc_s": 0.0447,
+    "enc_rss_kib": 13824
+   },
+   "brotli": {
+    "bytes": 52915,
+    "enc_s": 0.3565,
+    "enc_rss_kib": 16312
+   },
+   "cmix_published_bytes": 42760,
+   "paq_published_bytes": 41988,
+   "cmix": {
+    "bytes": 42760,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 41988,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "calgary",
+   "file": "news",
+   "input_bytes": 377109,
+   "ledger_input_bytes": 377109,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 144400,
+    "enc_s": 0.0341,
+    "enc_rss_kib": 1972
+   },
+   "xz": {
+    "bytes": 118900,
+    "enc_s": 0.1705,
+    "enc_rss_kib": 59568
+   },
+   "zstd": {
+    "bytes": 122693,
+    "enc_s": 0.121,
+    "enc_rss_kib": 20992
+   },
+   "brotli": {
+    "bytes": 112968,
+    "enc_s": 0.6541,
+    "enc_rss_kib": 25380
+   },
+   "cmix_published_bytes": 76389,
+   "paq_published_bytes": 82777,
+   "cmix": {
+    "bytes": 76389,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 82777,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "calgary",
+   "file": "obj1",
+   "input_bytes": 21504,
+   "ledger_input_bytes": 21504,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 10320,
+    "enc_s": 0.0164,
+    "enc_rss_kib": 1716
+   },
+   "xz": {
+    "bytes": 9428,
+    "enc_s": 0.0295,
+    "enc_rss_kib": 30000
+   },
+   "zstd": {
+    "bytes": 9855,
+    "enc_s": 0.0241,
+    "enc_rss_kib": 12060
+   },
+   "brotli": {
+    "bytes": 9341,
+    "enc_s": 0.0496,
+    "enc_rss_kib": 12992
+   },
+   "cmix_published_bytes": 7053,
+   "paq_published_bytes": 6969,
+   "cmix": {
+    "bytes": 7053,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 6969,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "calgary",
+   "file": "obj2",
+   "input_bytes": 246814,
+   "ledger_input_bytes": 246814,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 81087,
+    "enc_s": 0.032,
+    "enc_rss_kib": 1844
+   },
+   "xz": {
+    "bytes": 61504,
+    "enc_s": 0.1453,
+    "enc_rss_kib": 62384
+   },
+   "zstd": {
+    "bytes": 70287,
+    "enc_s": 0.103,
+    "enc_rss_kib": 16512
+   },
+   "brotli": {
+    "bytes": 65203,
+    "enc_s": 0.468,
+    "enc_rss_kib": 23844
+   },
+   "cmix_published_bytes": 40139,
+   "paq_published_bytes": 40353,
+   "cmix": {
+    "bytes": 40139,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 40353,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "calgary",
+   "file": "paper1",
+   "input_bytes": 53161,
+   "ledger_input_bytes": 53161,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 18543,
+    "enc_s": 0.0202,
+    "enc_rss_kib": 1716
+   },
+   "xz": {
+    "bytes": 17280,
+    "enc_s": 0.0373,
+    "enc_rss_kib": 26416
+   },
+   "zstd": {
+    "bytes": 17615,
+    "enc_s": 0.035,
+    "enc_rss_kib": 12700
+   },
+   "brotli": {
+    "bytes": 15457,
+    "enc_s": 0.0897,
+    "enc_rss_kib": 14660
+   },
+   "cmix_published_bytes": 10831,
+   "paq_published_bytes": 12349,
+   "cmix": {
+    "bytes": 10831,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 12349,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "calgary",
+   "file": "paper2",
+   "input_bytes": 82199,
+   "ledger_input_bytes": 82199,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 29667,
+    "enc_s": 0.0222,
+    "enc_rss_kib": 1844
+   },
+   "xz": {
+    "bytes": 27228,
+    "enc_s": 0.0446,
+    "enc_rss_kib": 25512
+   },
+   "zstd": {
+    "bytes": 27552,
+    "enc_s": 0.0421,
+    "enc_rss_kib": 13596
+   },
+   "brotli": {
+    "bytes": 24850,
+    "enc_s": 0.1341,
+    "enc_rss_kib": 16276
+   },
+   "cmix_published_bytes": 17169,
+   "paq_published_bytes": 19531,
+   "cmix": {
+    "bytes": 17169,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 19531,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "calgary",
+   "file": "paper3",
+   "input_bytes": 46526,
+   "ledger_input_bytes": 46526,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 18074,
+    "enc_s": 0.0182,
+    "enc_rss_kib": 1716
+   },
+   "xz": {
+    "bytes": 17064,
+    "enc_s": 0.0325,
+    "enc_rss_kib": 22828
+   },
+   "zstd": {
+    "bytes": 17183,
+    "enc_s": 0.0365,
+    "enc_rss_kib": 12688
+   },
+   "brotli": {
+    "bytes": 14639,
+    "enc_s": 0.0778,
+    "enc_rss_kib": 14448
+   },
+   "cmix_published_bytes": null,
+   "paq_published_bytes": 12380,
+   "cmix": {
+    "bytes": null,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "no local cmix_bar measurement"
+   },
+   "paq": {
+    "bytes": 12380,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "calgary",
+   "file": "paper4",
+   "input_bytes": 13286,
+   "ledger_input_bytes": 13286,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 5534,
+    "enc_s": 0.0164,
+    "enc_rss_kib": 1716
+   },
+   "xz": {
+    "bytes": 5408,
+    "enc_s": 0.0178,
+    "enc_rss_kib": 14384
+   },
+   "zstd": {
+    "bytes": 5369,
+    "enc_s": 0.0246,
+    "enc_rss_kib": 11660
+   },
+   "brotli": {
+    "bytes": 4283,
+    "enc_s": 0.0383,
+    "enc_rss_kib": 12944
+   },
+   "cmix_published_bytes": null,
+   "paq_published_bytes": 3971,
+   "cmix": {
+    "bytes": null,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "no local cmix_bar measurement"
+   },
+   "paq": {
+    "bytes": 3971,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "calgary",
+   "file": "paper5",
+   "input_bytes": 11954,
+   "ledger_input_bytes": 11954,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 4995,
+    "enc_s": 0.0259,
+    "enc_rss_kib": 1588
+   },
+   "xz": {
+    "bytes": 4900,
+    "enc_s": 0.0179,
+    "enc_rss_kib": 15272
+   },
+   "zstd": {
+    "bytes": 4865,
+    "enc_s": 0.0232,
+    "enc_rss_kib": 11648
+   },
+   "brotli": {
+    "bytes": 4073,
+    "enc_s": 0.0375,
+    "enc_rss_kib": 12816
+   },
+   "cmix_published_bytes": null,
+   "paq_published_bytes": 3690,
+   "cmix": {
+    "bytes": null,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "no local cmix_bar measurement"
+   },
+   "paq": {
+    "bytes": 3690,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "calgary",
+   "file": "paper6",
+   "input_bytes": 38105,
+   "ledger_input_bytes": 38105,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 13213,
+    "enc_s": 0.0475,
+    "enc_rss_kib": 1716
+   },
+   "xz": {
+    "bytes": 12504,
+    "enc_s": 0.0286,
+    "enc_rss_kib": 23344
+   },
+   "zstd": {
+    "bytes": 12728,
+    "enc_s": 0.0306,
+    "enc_rss_kib": 12696
+   },
+   "brotli": {
+    "bytes": 11135,
+    "enc_s": 0.0829,
+    "enc_rss_kib": 14044
+   },
+   "cmix_published_bytes": null,
+   "paq_published_bytes": 8977,
+   "cmix": {
+    "bytes": null,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "no local cmix_bar measurement"
+   },
+   "paq": {
+    "bytes": 8977,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "calgary",
+   "file": "pic",
+   "input_bytes": 513216,
+   "ledger_input_bytes": 513216,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 52381,
+    "enc_s": 0.0935,
+    "enc_rss_kib": 1716
+   },
+   "xz": {
+    "bytes": 41992,
+    "enc_s": 0.1823,
+    "enc_rss_kib": 45488
+   },
+   "zstd": {
+    "bytes": 43397,
+    "enc_s": 0.3089,
+    "enc_rss_kib": 21132
+   },
+   "brotli": {
+    "bytes": 40939,
+    "enc_s": 0.9474,
+    "enc_rss_kib": 27940
+   },
+   "cmix_published_bytes": 21883,
+   "paq_published_bytes": 16907,
+   "cmix": {
+    "bytes": 21883,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 16907,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "calgary",
+   "file": "progc",
+   "input_bytes": 39611,
+   "ledger_input_bytes": 39611,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 13261,
+    "enc_s": 0.0174,
+    "enc_rss_kib": 1716
+   },
+   "xz": {
+    "bytes": 12560,
+    "enc_s": 0.033,
+    "enc_rss_kib": 25520
+   },
+   "zstd": {
+    "bytes": 12790,
+    "enc_s": 0.0325,
+    "enc_rss_kib": 12696
+   },
+   "brotli": {
+    "bytes": 11619,
+    "enc_s": 0.0776,
+    "enc_rss_kib": 13932
+   },
+   "cmix_published_bytes": 8193,
+   "paq_published_bytes": 8863,
+   "cmix": {
+    "bytes": 8193,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 8863,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "calgary",
+   "file": "progl",
+   "input_bytes": 71646,
+   "ledger_input_bytes": 71646,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 16164,
+    "enc_s": 0.0416,
+    "enc_rss_kib": 1716
+   },
+   "xz": {
+    "bytes": 14984,
+    "enc_s": 0.0363,
+    "enc_rss_kib": 22700
+   },
+   "zstd": {
+    "bytes": 15148,
+    "enc_s": 0.053,
+    "enc_rss_kib": 13620
+   },
+   "brotli": {
+    "bytes": 14003,
+    "enc_s": 0.1255,
+    "enc_rss_kib": 15624
+   },
+   "cmix_published_bytes": 8788,
+   "paq_published_bytes": 9487,
+   "cmix": {
+    "bytes": 8788,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 9487,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "calgary",
+   "file": "progp",
+   "input_bytes": 49379,
+   "ledger_input_bytes": 49379,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 11186,
+    "enc_s": 0.0353,
+    "enc_rss_kib": 1716
+   },
+   "xz": {
+    "bytes": 10352,
+    "enc_s": 0.0335,
+    "enc_rss_kib": 23084
+   },
+   "zstd": {
+    "bytes": 10448,
+    "enc_s": 0.0418,
+    "enc_rss_kib": 12696
+   },
+   "brotli": {
+    "bytes": 9880,
+    "enc_s": 0.087,
+    "enc_rss_kib": 14404
+   },
+   "cmix_published_bytes": 6126,
+   "paq_published_bytes": 6329,
+   "cmix": {
+    "bytes": 6126,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 6329,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "calgary",
+   "file": "trans",
+   "input_bytes": 93695,
+   "ledger_input_bytes": 93695,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 18862,
+    "enc_s": 0.0185,
+    "enc_rss_kib": 1716
+   },
+   "xz": {
+    "bytes": 16720,
+    "enc_s": 0.0542,
+    "enc_rss_kib": 28592
+   },
+   "zstd": {
+    "bytes": 17294,
+    "enc_s": 0.08,
+    "enc_rss_kib": 13592
+   },
+   "brotli": {
+    "bytes": 15402,
+    "enc_s": 0.1338,
+    "enc_rss_kib": 16844
+   },
+   "cmix_published_bytes": 9990,
+   "paq_published_bytes": 10966,
+   "cmix": {
+    "bytes": 9990,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 10966,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "canterbury",
+   "file": "alice29.txt",
+   "input_bytes": 152089,
+   "ledger_input_bytes": 152089,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 54191,
+    "enc_s": 0.0255,
+    "enc_rss_kib": 1844
+   },
+   "xz": {
+    "bytes": 48492,
+    "enc_s": 0.075,
+    "enc_rss_kib": 30000
+   },
+   "zstd": {
+    "bytes": 49211,
+    "enc_s": 0.0733,
+    "enc_rss_kib": 16440
+   },
+   "brotli": {
+    "bytes": 46487,
+    "enc_s": 0.245,
+    "enc_rss_kib": 20004
+   },
+   "cmix_published_bytes": 31076,
+   "paq_published_bytes": 33037,
+   "cmix": {
+    "bytes": 31076,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 33037,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "canterbury",
+   "file": "asyoulik.txt",
+   "input_bytes": 125179,
+   "ledger_input_bytes": 125179,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 48829,
+    "enc_s": 0.0295,
+    "enc_rss_kib": 1844
+   },
+   "xz": {
+    "bytes": 44536,
+    "enc_s": 0.0598,
+    "enc_rss_kib": 28580
+   },
+   "zstd": {
+    "bytes": 45137,
+    "enc_s": 0.0598,
+    "enc_rss_kib": 13852
+   },
+   "brotli": {
+    "bytes": 42712,
+    "enc_s": 0.2178,
+    "enc_rss_kib": 18548
+   },
+   "cmix_published_bytes": 29434,
+   "paq_published_bytes": 31486,
+   "cmix": {
+    "bytes": 29434,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 31486,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "canterbury",
+   "file": "cp.html",
+   "input_bytes": 24603,
+   "ledger_input_bytes": 24603,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 7981,
+    "enc_s": 0.0436,
+    "enc_rss_kib": 1716
+   },
+   "xz": {
+    "bytes": 7644,
+    "enc_s": 0.0275,
+    "enc_rss_kib": 21548
+   },
+   "zstd": {
+    "bytes": 7712,
+    "enc_s": 0.0299,
+    "enc_rss_kib": 11932
+   },
+   "brotli": {
+    "bytes": 6894,
+    "enc_s": 0.0582,
+    "enc_rss_kib": 13244
+   },
+   "cmix_published_bytes": 4746,
+   "paq_published_bytes": 5405,
+   "cmix": {
+    "bytes": 4746,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 5405,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "canterbury",
+   "file": "fields.c",
+   "input_bytes": 11150,
+   "ledger_input_bytes": 11150,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 3136,
+    "enc_s": 0.0165,
+    "enc_rss_kib": 1716
+   },
+   "xz": {
+    "bytes": 3028,
+    "enc_s": 0.0153,
+    "enc_rss_kib": 10800
+   },
+   "zstd": {
+    "bytes": 3015,
+    "enc_s": 0.0276,
+    "enc_rss_kib": 11672
+   },
+   "brotli": {
+    "bytes": 2717,
+    "enc_s": 0.0484,
+    "enc_rss_kib": 12596
+   },
+   "cmix_published_bytes": 1909,
+   "paq_published_bytes": 2029,
+   "cmix": {
+    "bytes": 1909,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 2029,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "canterbury",
+   "file": "grammar.lsp",
+   "input_bytes": 3721,
+   "ledger_input_bytes": 3721,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 1246,
+    "enc_s": 0.0191,
+    "enc_rss_kib": 1716
+   },
+   "xz": {
+    "bytes": 1292,
+    "enc_s": 0.0107,
+    "enc_rss_kib": 6828
+   },
+   "zstd": {
+    "bytes": 1210,
+    "enc_s": 0.0228,
+    "enc_rss_kib": 11416
+   },
+   "brotli": {
+    "bytes": 1124,
+    "enc_s": 0.0311,
+    "enc_rss_kib": 12392
+   },
+   "cmix_published_bytes": 771,
+   "paq_published_bytes": 865,
+   "cmix": {
+    "bytes": 771,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 865,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "canterbury",
+   "file": "kennedy.xls",
+   "input_bytes": 1029744,
+   "ledger_input_bytes": 1029744,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 209733,
+    "enc_s": 0.3869,
+    "enc_rss_kib": 1972
+   },
+   "xz": {
+    "bytes": 49116,
+    "enc_s": 0.4449,
+    "enc_rss_kib": 34736
+   },
+   "zstd": {
+    "bytes": 69725,
+    "enc_s": 0.9377,
+    "enc_rss_kib": 30472
+   },
+   "brotli": {
+    "bytes": 61498,
+    "enc_s": 2.0874,
+    "enc_rss_kib": 67988
+   },
+   "cmix_published_bytes": 7955,
+   "paq_published_bytes": 8039,
+   "cmix": {
+    "bytes": 7955,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 8039,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "canterbury",
+   "file": "lcet10.txt",
+   "input_bytes": 426754,
+   "ledger_input_bytes": 426754,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 144429,
+    "enc_s": 0.0512,
+    "enc_rss_kib": 1844
+   },
+   "xz": {
+    "bytes": 119500,
+    "enc_s": 0.1825,
+    "enc_rss_kib": 42668
+   },
+   "zstd": {
+    "bytes": 121370,
+    "enc_s": 0.1457,
+    "enc_rss_kib": 21148
+   },
+   "brotli": {
+    "bytes": 113416,
+    "enc_s": 0.7187,
+    "enc_rss_kib": 26540
+   },
+   "cmix_published_bytes": 73365,
+   "paq_published_bytes": 78955,
+   "cmix": {
+    "bytes": 73365,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 78955,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "canterbury",
+   "file": "plrabn12.txt",
+   "input_bytes": 481861,
+   "ledger_input_bytes": 481861,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 194277,
+    "enc_s": 0.1019,
+    "enc_rss_kib": 1844
+   },
+   "xz": {
+    "bytes": 165412,
+    "enc_s": 0.2211,
+    "enc_rss_kib": 37028
+   },
+   "zstd": {
+    "bytes": 167438,
+    "enc_s": 0.171,
+    "enc_rss_kib": 21252
+   },
+   "brotli": {
+    "bytes": 163267,
+    "enc_s": 0.74,
+    "enc_rss_kib": 28052
+   },
+   "cmix_published_bytes": 112263,
+   "paq_published_bytes": 117355,
+   "cmix": {
+    "bytes": 112263,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 117355,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "canterbury",
+   "file": "ptt5",
+   "input_bytes": 513216,
+   "ledger_input_bytes": 513216,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 52382,
+    "enc_s": 0.0902,
+    "enc_rss_kib": 1712
+   },
+   "xz": {
+    "bytes": 41992,
+    "enc_s": 0.157,
+    "enc_rss_kib": 45360
+   },
+   "zstd": {
+    "bytes": 43397,
+    "enc_s": 0.2704,
+    "enc_rss_kib": 21132
+   },
+   "brotli": {
+    "bytes": 40939,
+    "enc_s": 0.9011,
+    "enc_rss_kib": 28216
+   },
+   "cmix_published_bytes": 21883,
+   "paq_published_bytes": 16907,
+   "cmix": {
+    "bytes": 21883,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 16907,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "canterbury",
+   "file": "sum",
+   "input_bytes": 38240,
+   "ledger_input_bytes": 38240,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 12772,
+    "enc_s": 0.0213,
+    "enc_rss_kib": 1716
+   },
+   "xz": {
+    "bytes": 9452,
+    "enc_s": 0.0319,
+    "enc_rss_kib": 26672
+   },
+   "zstd": {
+    "bytes": 11228,
+    "enc_s": 0.0447,
+    "enc_rss_kib": 12700
+   },
+   "brotli": {
+    "bytes": 10144,
+    "enc_s": 0.0733,
+    "enc_rss_kib": 13968
+   },
+   "cmix_published_bytes": 6870,
+   "paq_published_bytes": 6642,
+   "cmix": {
+    "bytes": 6870,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 6642,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "canterbury",
+   "file": "xargs.1",
+   "input_bytes": 4227,
+   "ledger_input_bytes": 4227,
+   "size_check": "match",
+   "gzip": {
+    "bytes": 1756,
+    "enc_s": 0.02,
+    "enc_rss_kib": 1588
+   },
+   "xz": {
+    "bytes": 1812,
+    "enc_s": 0.0118,
+    "enc_rss_kib": 8744
+   },
+   "zstd": {
+    "bytes": 1724,
+    "enc_s": 0.0226,
+    "enc_rss_kib": 11452
+   },
+   "brotli": {
+    "bytes": 1464,
+    "enc_s": 0.0276,
+    "enc_rss_kib": 12532
+   },
+   "cmix_published_bytes": 1123,
+   "paq_published_bytes": 1297,
+   "cmix": {
+    "bytes": 1123,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 1297,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "silesia",
+   "file": "dickens",
+   "input_bytes": 10192446,
+   "ledger_input_bytes": null,
+   "size_check": "ledger_input_bytes_blank",
+   "gzip": {
+    "bytes": 3851823,
+    "enc_s": 0.8926,
+    "enc_rss_kib": 2100
+   },
+   "xz": {
+    "bytes": 2830604,
+    "enc_s": 8.2402,
+    "enc_rss_kib": 144944
+   },
+   "zstd": {
+    "bytes": 2849384,
+    "enc_s": 6.807,
+    "enc_rss_kib": 294164
+   },
+   "brotli": {
+    "bytes": 2853158,
+    "enc_s": 20.4162,
+    "enc_rss_kib": 107856
+   },
+   "cmix_published_bytes": 1802071,
+   "paq_published_bytes": 1900544,
+   "cmix": {
+    "bytes": 1802071,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 1900544,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "silesia",
+   "file": "mozilla",
+   "input_bytes": 51220480,
+   "ledger_input_bytes": null,
+   "size_check": "ledger_input_bytes_blank",
+   "gzip": {
+    "bytes": 18994142,
+    "enc_s": 7.3776,
+    "enc_rss_kib": 1844
+   },
+   "xz": {
+    "bytes": 13374160,
+    "enc_s": 28.0862,
+    "enc_rss_kib": 518320
+   },
+   "zstd": {
+    "bytes": 14967871,
+    "enc_s": 33.5858,
+    "enc_rss_kib": 767764
+   },
+   "brotli": {
+    "bytes": 14077215,
+    "enc_s": 129.7593,
+    "enc_rss_kib": 213912
+   },
+   "cmix_published_bytes": 6634210,
+   "paq_published_bytes": 6177792,
+   "cmix": {
+    "bytes": 6634210,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 6177792,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "silesia",
+   "file": "mr",
+   "input_bytes": 9970564,
+   "ledger_input_bytes": null,
+   "size_check": "ledger_input_bytes_blank",
+   "gzip": {
+    "bytes": 3673940,
+    "enc_s": 1.4594,
+    "enc_rss_kib": 1972
+   },
+   "xz": {
+    "bytes": 2750272,
+    "enc_s": 5.2593,
+    "enc_rss_kib": 148656
+   },
+   "zstd": {
+    "bytes": 3105769,
+    "enc_s": 5.3091,
+    "enc_rss_kib": 293672
+   },
+   "brotli": {
+    "bytes": 2825713,
+    "enc_s": 20.3396,
+    "enc_rss_kib": 108436
+   },
+   "cmix_published_bytes": 1828423,
+   "paq_published_bytes": 1789952,
+   "cmix": {
+    "bytes": 1828423,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 1789952,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "silesia",
+   "file": "nci",
+   "input_bytes": 33553445,
+   "ledger_input_bytes": null,
+   "size_check": "ledger_input_bytes_blank",
+   "gzip": {
+    "bytes": 2987533,
+    "enc_s": 2.4908,
+    "enc_rss_kib": 2100
+   },
+   "xz": {
+    "bytes": 1738884,
+    "enc_s": 10.1266,
+    "enc_rss_kib": 315440
+   },
+   "zstd": {
+    "bytes": 1615442,
+    "enc_s": 21.1315,
+    "enc_rss_kib": 470800
+   },
+   "brotli": {
+    "bytes": 1616326,
+    "enc_s": 59.0585,
+    "enc_rss_kib": 162360
+   },
+   "cmix_published_bytes": 781325,
+   "paq_published_bytes": 787456,
+   "cmix": {
+    "bytes": 781325,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 787456,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "silesia",
+   "file": "ooffice",
+   "input_bytes": 6152192,
+   "ledger_input_bytes": null,
+   "size_check": "ledger_input_bytes_blank",
+   "gzip": {
+    "bytes": 3090442,
+    "enc_s": 0.6098,
+    "enc_rss_kib": 1972
+   },
+   "xz": {
+    "bytes": 2426816,
+    "enc_s": 3.2116,
+    "enc_rss_kib": 122288
+   },
+   "zstd": {
+    "bytes": 2598834,
+    "enc_s": 2.5566,
+    "enc_rss_kib": 155284
+   },
+   "brotli": {
+    "bytes": 2479758,
+    "enc_s": 15.0859,
+    "enc_rss_kib": 99516
+   },
+   "cmix_published_bytes": 1221977,
+   "paq_published_bytes": 1233920,
+   "cmix": {
+    "bytes": 1221977,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 1233920,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "silesia",
+   "file": "osdb",
+   "input_bytes": 10085684,
+   "ledger_input_bytes": null,
+   "size_check": "ledger_input_bytes_blank",
+   "gzip": {
+    "bytes": 3716342,
+    "enc_s": 0.5695,
+    "enc_rss_kib": 1844
+   },
+   "xz": {
+    "bytes": 2849908,
+    "enc_s": 5.2975,
+    "enc_rss_kib": 156692
+   },
+   "zstd": {
+    "bytes": 3098442,
+    "enc_s": 4.4393,
+    "enc_rss_kib": 293608
+   },
+   "brotli": {
+    "bytes": 2825123,
+    "enc_s": 16.7594,
+    "enc_rss_kib": 105780
+   },
+   "cmix_published_bytes": 1963597,
+   "paq_published_bytes": 2001920,
+   "cmix": {
+    "bytes": 1963597,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 2001920,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "silesia",
+   "file": "reymont",
+   "input_bytes": 6627202,
+   "ledger_input_bytes": null,
+   "size_check": "ledger_input_bytes_blank",
+   "gzip": {
+    "bytes": 1820834,
+    "enc_s": 1.148,
+    "enc_rss_kib": 2100
+   },
+   "xz": {
+    "bytes": 1317152,
+    "enc_s": 4.3783,
+    "enc_rss_kib": 123944
+   },
+   "zstd": {
+    "bytes": 1347612,
+    "enc_s": 3.6314,
+    "enc_rss_kib": 156040
+   },
+   "brotli": {
+    "bytes": 1335805,
+    "enc_s": 11.8466,
+    "enc_rss_kib": 98420
+   },
+   "cmix_published_bytes": 704817,
+   "paq_published_bytes": 713728,
+   "cmix": {
+    "bytes": 704817,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 713728,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "silesia",
+   "file": "samba",
+   "input_bytes": 21606400,
+   "ledger_input_bytes": null,
+   "size_check": "ledger_input_bytes_blank",
+   "gzip": {
+    "bytes": 5408272,
+    "enc_s": 1.6158,
+    "enc_rss_kib": 1972
+   },
+   "xz": {
+    "bytes": 3763616,
+    "enc_s": 9.5033,
+    "enc_rss_kib": 257956
+   },
+   "zstd": {
+    "bytes": 3877350,
+    "enc_s": 10.886,
+    "enc_rss_kib": 447728
+   },
+   "brotli": {
+    "bytes": 3823126,
+    "enc_s": 34.1841,
+    "enc_rss_kib": 137216
+   },
+   "cmix_published_bytes": 1588875,
+   "paq_published_bytes": 1614848,
+   "cmix": {
+    "bytes": 1588875,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 1614848,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "silesia",
+   "file": "sao",
+   "input_bytes": 7251944,
+   "ledger_input_bytes": null,
+   "size_check": "ledger_input_bytes_blank",
+   "gzip": {
+    "bytes": 5327041,
+    "enc_s": 0.6755,
+    "enc_rss_kib": 1972
+   },
+   "xz": {
+    "bytes": 4415072,
+    "enc_s": 4.1001,
+    "enc_rss_kib": 131756
+   },
+   "zstd": {
+    "bytes": 5000511,
+    "enc_s": 2.5652,
+    "enc_rss_kib": 157212
+   },
+   "brotli": {
+    "bytes": 4589967,
+    "enc_s": 16.2269,
+    "enc_rss_kib": 97012
+   },
+   "cmix_published_bytes": 3726502,
+   "paq_published_bytes": 3808256,
+   "cmix": {
+    "bytes": 3726502,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 3808256,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "silesia",
+   "file": "webster",
+   "input_bytes": 41458703,
+   "ledger_input_bytes": null,
+   "size_check": "ledger_input_bytes_blank",
+   "gzip": {
+    "bytes": 12061624,
+    "enc_s": 3.6294,
+    "enc_rss_kib": 1972
+   },
+   "xz": {
+    "bytes": 8385868,
+    "enc_s": 38.2588,
+    "enc_rss_kib": 428464
+   },
+   "zstd": {
+    "bytes": 8458302,
+    "enc_s": 43.3799,
+    "enc_rss_kib": 748256
+   },
+   "brotli": {
+    "bytes": 8788708,
+    "enc_s": 76.2469,
+    "enc_rss_kib": 161672
+   },
+   "cmix_published_bytes": 4271915,
+   "paq_published_bytes": 4476928,
+   "cmix": {
+    "bytes": 4271915,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 4476928,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "silesia",
+   "file": "x-ray",
+   "input_bytes": 8474240,
+   "ledger_input_bytes": null,
+   "size_check": "ledger_input_bytes_blank",
+   "gzip": {
+    "bytes": 6037713,
+    "enc_s": 0.6221,
+    "enc_rss_kib": 1972
+   },
+   "xz": {
+    "bytes": 4489868,
+    "enc_s": 6.0567,
+    "enc_rss_kib": 142628
+   },
+   "zstd": {
+    "bytes": 5155748,
+    "enc_s": 4.1029,
+    "enc_rss_kib": 290736
+   },
+   "brotli": {
+    "bytes": 4687298,
+    "enc_s": 20.425,
+    "enc_rss_kib": 112532
+   },
+   "cmix_published_bytes": 3503686,
+   "paq_published_bytes": 3586048,
+   "cmix": {
+    "bytes": 3503686,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 3586048,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "silesia",
+   "file": "xml",
+   "input_bytes": 5345280,
+   "ledger_input_bytes": null,
+   "size_check": "ledger_input_bytes_blank",
+   "gzip": {
+    "bytes": 662284,
+    "enc_s": 0.3363,
+    "enc_rss_kib": 1972
+   },
+   "xz": {
+    "bytes": 453260,
+    "enc_s": 1.4236,
+    "enc_rss_kib": 110768
+   },
+   "zstd": {
+    "bytes": 453213,
+    "enc_s": 3.0779,
+    "enc_rss_kib": 153472
+   },
+   "brotli": {
+    "bytes": 430390,
+    "enc_s": 7.009,
+    "enc_rss_kib": 79188
+   },
+   "cmix_published_bytes": 233696,
+   "paq_published_bytes": 249856,
+   "cmix": {
+    "bytes": 233696,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 249856,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  },
+  {
+   "corpus": "hutter",
+   "file": "enwik8",
+   "input_bytes": 100000000,
+   "ledger_input_bytes": null,
+   "size_check": "ledger_input_bytes_blank",
+   "gzip": {
+    "bytes": 36445248,
+    "enc_s": 6.7448,
+    "enc_rss_kib": 2100
+   },
+   "xz": {
+    "bytes": 24865244,
+    "enc_s": 119.7653,
+    "enc_rss_kib": 689712
+   },
+   "zstd": {
+    "bytes": 25333641,
+    "enc_s": 137.9173,
+    "enc_rss_kib": 871128
+   },
+   "brotli": {
+    "bytes": 27045057,
+    "enc_s": 233.9173,
+    "enc_rss_kib": 343884
+   },
+   "cmix_published_bytes": 14623723,
+   "paq_published_bytes": 15849084,
+   "cmix": {
+    "bytes": 14623723,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   },
+   "paq": {
+    "bytes": 15849084,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
+   }
+  }
+ ]
+}

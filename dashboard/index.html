@@ -1,0 +1,41 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Compression &amp; decoding dashboard · Pedulli</title><meta name="description" content="Upload a file. The codec runs locally as WebAssembly; nothing is uploaded to a server. The artifact is verified by a separate decode and matching SHA-256 before download.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://pedulli.io/dashboard/"><link rel="alternate" hreflang="en" href="https://pedulli.io/dashboard/"><link rel="alternate" hreflang="it" href="https://pedulli.io/it/dashboard/"><link rel="alternate" hreflang="de" href="https://pedulli.io/de/dashboard/"><link rel="alternate" hreflang="fr" href="https://pedulli.io/fr/dashboard/"><link rel="alternate" hreflang="es" href="https://pedulli.io/es/dashboard/"><link rel="alternate" hreflang="x-default" href="https://pedulli.io/dashboard/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Pedulli">
+<meta property="og:title" content="Compression &amp; decoding dashboard · Pedulli"><meta property="og:description" content="Upload a file. The codec runs locally as WebAssembly; nothing is uploaded to a server. The artifact is verified by a separate decode and matching SHA-256 before download.">
+<meta property="og:url" content="https://pedulli.io/dashboard/"><meta property="og:image" content="https://pedulli.io/assets/brand.svg">
+<meta property="og:locale" content="en_US"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Compression &amp; decoding dashboard · Pedulli"><meta name="twitter:description" content="Upload a file. The codec runs locally as WebAssembly; nothing is uploaded to a server. The artifact is verified by a separate decode and matching SHA-256 before download."><meta name="twitter:image" content="https://pedulli.io/assets/brand.svg">
+<meta name="theme-color" content="#07090f"><meta name="referrer" content="no-referrer">
+<link rel="icon" href="/assets/mark.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/assets/mark.svg">
+<link rel="manifest" href="/manifest.webmanifest"><link rel="stylesheet" href="/assets/style.css">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self' 'wasm-unsafe-eval'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "Pedulli", "url": "https://pedulli.io", "founder": {"@type": "Person", "name": "Francesco Pedulli", "jobTitle": "Mathematician, Senior Software Engineer and Researcher", "worksFor": {"@type": "Organization", "name": "Cristallo Technologies"}, "email": "mailto:francescopedulli@gmail.com", "telephone": "+39 327 014 3909"}}, {"@type": "WebSite", "name": "Pedulli / SRD", "url": "https://pedulli.io", "publisher": {"@type": "Organization", "name": "Pedulli", "url": "https://pedulli.io", "founder": {"@type": "Person", "name": "Francesco Pedulli", "jobTitle": "Mathematician, Senior Software Engineer and Researcher", "worksFor": {"@type": "Organization", "name": "Cristallo Technologies"}, "email": "mailto:francescopedulli@gmail.com", "telephone": "+39 327 014 3909"}}, "inLanguage": ["en", "it", "de", "fr", "es"]}, {"@type": "SoftwareApplication", "name": "SRD", "applicationCategory": "UtilitiesApplication", "operatingSystem": "WebAssembly, modern browser", "description": "Exact lossless compression in one mode.", "url": "https://pedulli.io/technology/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does upload send my file to a server?", "acceptedAnswer": {"@type": "Answer", "text": "No. Compression runs locally in your browser using WebAssembly. The file is never transmitted."}}, {"@type": "Question", "name": "Is the source code published?", "acceptedAnswer": {"@type": "Answer", "text": "No. The public origin serves only prebuilt static files and a stripped WebAssembly module."}}, {"@type": "Question", "name": "How is a result verified?", "acceptedAnswer": {"@type": "Answer", "text": "By byte-exact restore in a separate decode and a matching SHA-256 of input and restored bytes."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pedulli.io/"}, {"@type": "ListItem", "position": 2, "name": "Compression & decoding dashboard", "item": "https://pedulli.io/dashboard/"}]}]}</script></head><body>
+<a class="skip" href="#main">Skip to content</a><header class="site-head"><div class="wrap nav">
+<a class="brand" href="/"><img src="/assets/mark.svg" alt=""><b>PEDU<i>LLI</i></b></a>
+<nav aria-label="Language"><a href="/">Home</a><a href="/technology/">Technology</a><a href="/research/">Research</a><a href="/evidence/">Evidence</a><a href="/security/">Security</a><a href="/pilot/">Pilot</a><a href="/dashboard/" aria-current="page">Dashboard</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
+<div class="langs" aria-label="Language"><a href="/dashboard/" aria-current="true">EN</a><a href="/it/dashboard/">IT</a><a href="/de/dashboard/">DE</a><a href="/fr/dashboard/">FR</a><a href="/es/dashboard/">ES</a></div>
+<a class="btn primary cta" href="/pilot/">Request a pilot</a>
+</div></header><main id="main"><nav class="crumbs wrap" aria-label="Breadcrumb"><a href="/">Home</a> / Dashboard</nav><section class="wrap pagehead"><div class="kicker">Dashboard</div><h1>Compress a file in your browser.</h1><p class="lead">Upload a file. The codec runs locally as WebAssembly; nothing is uploaded to a server. The artifact is verified by a separate decode and matching SHA-256 before download.</p>
+<p class="note">Local only · nothing leaves this device</p></section>
+<section class="wrap block"><div class="modes" role="group" aria-label="Mode">
+<button class="btn primary" id="modeCompress" type="button" aria-pressed="true">Compress</button>
+<button class="btn" id="modeDecode" type="button" aria-pressed="false">Decode artifact</button></div>
+<form id="uploadForm" novalidate>
+<div class="drop" id="drop"><span class="big" id="dropLabel">Drop a file or choose one</span><span id="fileName" class="mono" style="font-size:12px"></span>
+<input type="file" id="fileInput" accept="*/*"></div>
+<p class="note" id="fileNote" style="margin-top:14px">Best ratio. Large files may take minutes. Limit 8 MB.</p>
+<div class="cta-row"><button class="btn primary" id="compressBtn" type="submit">Compress &amp; verify</button></div>
+<div class="progress" id="progress"><i></i></div><p class="note" id="status"></p></form>
+<div class="results" id="results" hidden><dl>
+<div><dt id="lInput">Input</dt><dd id="rInput"></dd></div><div><dt id="lArtifact">Artifact</dt><dd id="rArtifact"></dd></div>
+<div><dt>Ratio</dt><dd id="rRatio"></dd></div><div><dt>Encode time</dt><dd id="rEncode"></dd></div>
+<div><dt>Decode time</dt><dd id="rDecode"></dd></div><div><dt>WASM heap</dt><dd id="rMem"></dd></div>
+<div><dt id="lShaIn">Input SHA-256</dt><dd id="rShaIn"></dd></div><div><dt id="lShaArt">Artifact SHA-256</dt><dd id="rShaArt"></dd></div>
+<div><dt id="lShaOut">Restored SHA-256</dt><dd id="rShaOut"></dd></div><div><dt>Verification</dt><dd id="rVerify"></dd></div></dl>
+<div class="cta-row"><a class="btn primary" id="download" href="#" hidden download>Download artifact</a></div></div></section></main><footer class="wrap"><span>© 2026 Francesco Pedulli · Italy · All rights reserved.</span>
+<span>Build less. Verify more. · <a href="#main">Back to top ↑</a></span></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/assets/app.js"></script></body></html>

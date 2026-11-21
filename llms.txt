@@ -1,0 +1,14 @@
+# Pedulli / SRD
+
+Exact lossless compression in one mode. Verification is by byte-exact restore and matching SHA-256.
+Compression runs locally in the browser; no file is uploaded. The public origin contains no source code.
+
+- Technology: https://pedulli.io/technology/
+- Evidence (42 files, 4 corpora, 3 axes): https://pedulli.io/evidence/
+- Security and control mapping: https://pedulli.io/security/
+- CTO and company pilot: https://pedulli.io/pilot/
+- Live dashboard: https://pedulli.io/dashboard/
+- About and CV: https://pedulli.io/about/
+- Contact: francescopedulli@gmail.com
+
+Research methods, models and intermediate results are private and are not described publicly.
