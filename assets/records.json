@@ -1,135 +1,176 @@
 {
- "generated": "2026-11-21",
+ "generated": "2026-11-22",
+ "source_sha256": "b1dbfadfc4b594ddbae3ba4fed92c73d8649307abfc93fe66507b721ff6968e1",
+ "binary_sha256": "8c905ecfbb580a125b027a56d162c5e2a3db26bb36ce1336ac44f158bb33b0ff",
  "records": [
   {
    "corpus": "calgary",
    "file": "bib",
    "input": 111261,
-   "srd": 20925,
+   "srd": 20340,
    "cmix": 17180,
    "paq": 19574,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "calgary",
    "file": "book1",
    "input": 768771,
-   "srd": 192383,
+   "srd": 191391,
    "cmix": 173709,
    "paq": 182977,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "calgary",
    "file": "book2",
    "input": 610856,
-   "srd": 122157,
+   "srd": 119194,
    "cmix": 105918,
    "paq": 113553,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "calgary",
    "file": "geo",
    "input": 102400,
-   "srd": 44205,
+   "srd": 44172,
    "cmix": 42760,
    "paq": 41988,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "calgary",
    "file": "news",
    "input": 377109,
-   "srd": 90245,
+   "srd": 87436,
    "cmix": 76389,
    "paq": 82777,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "calgary",
    "file": "obj1",
    "input": 21504,
-   "srd": 7804,
+   "srd": 7785,
    "cmix": 7053,
    "paq": 6969,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "calgary",
    "file": "obj2",
    "input": 246814,
-   "srd": 47274,
+   "srd": 47226,
    "cmix": 40139,
    "paq": 40353,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "calgary",
    "file": "paper1",
    "input": 53161,
-   "srd": 12978,
+   "srd": 11753,
    "cmix": 10831,
    "paq": 12349,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": true,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": true
   },
   {
    "corpus": "calgary",
    "file": "paper2",
    "input": 82199,
-   "srd": 20278,
+   "srd": 18724,
    "cmix": 17169,
    "paq": 19531,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": true,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": true
   },
   {
    "corpus": "calgary",
    "file": "paper3",
    "input": 46526,
-   "srd": 12824,
+   "srd": 11767,
    "cmix": null,
    "paq": 12380,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": true,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": true
   },
   {
    "corpus": "calgary",
    "file": "paper4",
    "input": 13286,
-   "srd": 4025,
+   "srd": 3412,
    "cmix": null,
    "paq": 3971,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": true,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": true,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "calgary",
    "file": "paper5",
    "input": 11954,
-   "srd": 3773,
+   "srd": 3257,
    "cmix": null,
    "paq": 3690,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": true,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": true,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "calgary",
    "file": "paper6",
    "input": 38105,
-   "srd": 9428,
+   "srd": 8558,
    "cmix": null,
    "paq": 8977,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": true,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": true,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "calgary",
@@ -138,98 +179,128 @@
    "srd": 23754,
    "cmix": 21883,
    "paq": 16907,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "calgary",
    "file": "progc",
    "input": 39611,
-   "srd": 9512,
+   "srd": 8741,
    "cmix": 8193,
    "paq": 8863,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": true,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": true
   },
   {
    "corpus": "calgary",
    "file": "progl",
    "input": 71646,
-   "srd": 10575,
+   "srd": 9995,
    "cmix": 8788,
    "paq": 9487,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "calgary",
    "file": "progp",
    "input": 49379,
-   "srd": 7293,
+   "srd": 7168,
    "cmix": 6126,
    "paq": 6329,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "calgary",
    "file": "trans",
    "input": 93695,
-   "srd": 11742,
+   "srd": 11227,
    "cmix": 9990,
    "paq": 10966,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "canterbury",
    "file": "alice29.txt",
    "input": 152089,
-   "srd": 35006,
+   "srd": 34507,
    "cmix": 31076,
    "paq": 33037,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "canterbury",
    "file": "asyoulik.txt",
    "input": 125179,
-   "srd": 32889,
+   "srd": 32573,
    "cmix": 29434,
    "paq": 31486,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "canterbury",
    "file": "cp.html",
    "input": 24603,
-   "srd": 5869,
+   "srd": 5719,
    "cmix": 4746,
    "paq": 5405,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "canterbury",
    "file": "fields.c",
    "input": 11150,
-   "srd": 2145,
+   "srd": 1935,
    "cmix": 1909,
    "paq": 2029,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": true,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": true,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "canterbury",
    "file": "grammar.lsp",
    "input": 3721,
-   "srd": 823,
+   "srd": 809,
    "cmix": 771,
    "paq": 865,
-   "beats_cmix": false,
-   "beats_paq": true
+   "beats_paq_external": true,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": true,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "canterbury",
@@ -238,28 +309,37 @@
    "srd": 11705,
    "cmix": 7955,
    "paq": 8039,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "canterbury",
    "file": "lcet10.txt",
    "input": 426754,
-   "srd": 83837,
+   "srd": 81814,
    "cmix": 73365,
    "paq": 78955,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "canterbury",
    "file": "plrabn12.txt",
    "input": 481861,
-   "srd": 121849,
+   "srd": 121363,
    "cmix": 112263,
    "paq": 117355,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "canterbury",
@@ -268,38 +348,50 @@
    "srd": 23754,
    "cmix": 21883,
    "paq": 16907,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "canterbury",
    "file": "sum",
    "input": 38240,
-   "srd": 7912,
+   "srd": 7877,
    "cmix": 6870,
    "paq": 6642,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "canterbury",
    "file": "xargs.1",
    "input": 4227,
-   "srd": 1272,
+   "srd": 1014,
    "cmix": 1123,
    "paq": 1297,
-   "beats_cmix": false,
-   "beats_paq": true
+   "beats_paq_external": true,
+   "beats_cmix_published": true,
+   "authoritative_paq_win": true,
+   "authoritative_both_win": true,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "silesia",
    "file": "dickens",
    "input": 10192446,
-   "srd": 2014823,
+   "srd": 2011227,
    "cmix": 1802071,
    "paq": 1900544,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "silesia",
@@ -308,8 +400,11 @@
    "srd": 8780189,
    "cmix": 6634210,
    "paq": 6177792,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "silesia",
@@ -318,8 +413,11 @@
    "srd": 1863721,
    "cmix": 1828423,
    "paq": 1789952,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "silesia",
@@ -328,8 +426,11 @@
    "srd": 986697,
    "cmix": 781325,
    "paq": 787456,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "silesia",
@@ -338,8 +439,11 @@
    "srd": 1494545,
    "cmix": 1221977,
    "paq": 1233920,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "silesia",
@@ -348,8 +452,11 @@
    "srd": 2119750,
    "cmix": 1963597,
    "paq": 2001920,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "silesia",
@@ -358,8 +465,11 @@
    "srd": 619121,
    "cmix": 704817,
    "paq": 713728,
-   "beats_cmix": true,
-   "beats_paq": true
+   "beats_paq_external": true,
+   "beats_cmix_published": true,
+   "authoritative_paq_win": true,
+   "authoritative_both_win": true,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "silesia",
@@ -368,8 +478,11 @@
    "srd": 2516136,
    "cmix": 1588875,
    "paq": 1614848,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "silesia",
@@ -378,8 +491,11 @@
    "srd": 3535809,
    "cmix": 3726502,
    "paq": 3808256,
-   "beats_cmix": true,
-   "beats_paq": true
+   "beats_paq_external": true,
+   "beats_cmix_published": true,
+   "authoritative_paq_win": true,
+   "authoritative_both_win": true,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "silesia",
@@ -388,8 +504,11 @@
    "srd": 5233180,
    "cmix": 4271915,
    "paq": 4476928,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "silesia",
@@ -398,8 +517,11 @@
    "srd": 3491278,
    "cmix": 3503686,
    "paq": 3586048,
-   "beats_cmix": true,
-   "beats_paq": true
+   "beats_paq_external": true,
+   "beats_cmix_published": true,
+   "authoritative_paq_win": true,
+   "authoritative_both_win": true,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "silesia",
@@ -408,8 +530,11 @@
    "srd": 284889,
    "cmix": 233696,
    "paq": 249856,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   },
   {
    "corpus": "hutter",
@@ -418,8 +543,36 @@
    "srd": 19576888,
    "cmix": 14623723,
    "paq": 15849084,
-   "beats_cmix": false,
-   "beats_paq": false
+   "beats_paq_external": false,
+   "beats_cmix_published": false,
+   "authoritative_paq_win": false,
+   "authoritative_both_win": false,
+   "nominal_bar_win_unverified": false
   }
- ]
+ ],
+ "comparator_provenance": {
+  "paq": "external measurement, not rerun here",
+  "cmix": "published unverified reference, not run locally"
+ },
+ "status": "verified_exact_no_universal_record",
+ "claim": "9 of 42 files beat measured PAQ; 4 of those also beat published cmix. No universal record.",
+ "authoritative_wins": {
+  "beat_paq": 9,
+  "beat_both": 4,
+  "paq_only": [
+   "grammar.lsp",
+   "paper4",
+   "paper5",
+   "paper6",
+   "fields.c"
+  ],
+  "both": [
+   "xargs.1",
+   "reymont",
+   "sao",
+   "x-ray"
+  ]
+ },
+ "header_update_note": "comment-only update: 9 wins / 4 both; binary byte-identical",
+ "record_claim": "none: no universal four-corpus record; 9/42 beat PAQ, 4 also beat published cmix"
 }

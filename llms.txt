@@ -1,7 +1,7 @@
 # Pedulli / SRD
 
 Exact lossless compression in one mode. Verification is by byte-exact restore and matching SHA-256.
-Compression runs locally in the browser; no file is uploaded. The public origin contains no source code.
+The public compressor is locked; no file is uploaded. Private evaluations run server-side. The public origin contains no source code or executable codec.
 
 - Technology: https://pedulli.io/technology/
 - Evidence (42 files, 4 corpora, 3 axes): https://pedulli.io/evidence/

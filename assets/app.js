@@ -24,11 +24,13 @@ window.ALLI18N={"en": {"ev_showing": "Showing 42 files", "dash_choose": "Choose 
        var rows=(rec.records||[]).filter(function(r){return f==='all'||r.corpus===f});
        body.innerHTML=rows.map(function(r){
          var c=cm[key(r)]||{};
-         var both=(r.srd<r.cmix&&r.srd<r.paq)?'<span class="yes">both</span>':'—';
+         var paq=(typeof r.paq==='number'&&r.srd<r.paq);
+         var cmixpub=(typeof r.cmix==='number'&&r.srd<r.cmix);
+         var status=(paq&&cmixpub)?'<span class="yes">PAQ ✓ · cmix*</span>':(paq?'<span class="yes">PAQ ✓</span>':'—');
          return tr([cell('<span class="mono">'+r.corpus+'</span>'),cell('<span class="mono">'+r.file+'</span>'),
            cell(val(r.input)),cell('<b class="mono">'+fmt(r.srd)+'</b>'),cell(val(r.cmix)),cell(val(r.paq)),
            cell(c.zstd&&val(c.zstd.bytes)),cell(c.xz&&val(c.xz.bytes)),cell(c.brotli&&val(c.brotli.bytes)),
-           cell(c.gzip&&val(c.gzip.bytes)),cell(both)]);
+           cell(c.gzip&&val(c.gzip.bytes)),cell(status)]);
        }).join('');
      }
      draw('all');
