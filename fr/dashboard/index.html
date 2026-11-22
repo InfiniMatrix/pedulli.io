@@ -18,25 +18,9 @@
 <nav aria-label="Langue"><a href="/fr/">Accueil</a><a href="/fr/technology/">Technologie</a><a href="/fr/research/">Recherche</a><a href="/fr/evidence/">Preuves</a><a href="/fr/security/">Sécurité</a><a href="/fr/pilot/">Pilote</a><a href="/fr/dashboard/" aria-current="page">Tableau de bord</a><a href="/fr/faq/">FAQ</a><a href="/fr/about/">À propos</a><a href="/fr/contact/">Contact</a></nav>
 <div class="langs" aria-label="Langue"><a href="/dashboard/">EN</a><a href="/it/dashboard/">IT</a><a href="/de/dashboard/">DE</a><a href="/fr/dashboard/" aria-current="true">FR</a><a href="/es/dashboard/">ES</a></div>
 <a class="btn primary cta" href="/fr/pilot/">Demander un pilote</a>
-</div></header><main id="main"><nav class="crumbs wrap" aria-label="Breadcrumb"><a href="/fr/">Accueil</a> / Tableau de bord</nav><section class="wrap pagehead"><div class="kicker">Tableau de bord</div><h1>Compressez un fichier dans le navigateur.</h1><p class="lead">Chargez un fichier. Le codec s’exécute localement en WebAssembly ; rien n’est envoyé à un serveur. L’artefact est vérifié par décodage séparé et SHA-256 avant téléchargement.</p>
-<p class="note">Local uniquement · rien ne quitte cet appareil</p></section>
-<section class="wrap block"><div class="modes" role="group" aria-label="Mode">
-<button class="btn primary" id="modeCompress" type="button" aria-pressed="true">Compresser</button>
-<button class="btn" id="modeDecode" type="button" aria-pressed="false">Décoder un artefact</button></div>
-<form id="uploadForm" novalidate>
-<div class="drop" id="drop"><span class="big" id="dropLabel">Déposez ou choisissez un fichier</span><span id="fileName" class="mono" style="font-size:12px"></span>
-<input type="file" id="fileInput" accept="*/*"></div>
-<p class="note" id="fileNote" style="margin-top:14px">Meilleur ratio. Les gros fichiers peuvent prendre des minutes. Limite 8 Mo.</p>
-<p class="note" id="formatNote">Les formats déjà compressés (PDF, ZIP, JPG, PNG, MP4) offrent généralement des gains plus faibles.</p>
-<div class="cta-row"><button class="btn primary" id="compressBtn" type="submit">Compresser et vérifier</button></div>
-<div class="progress" id="progress"><i></i></div><p class="note" id="status"></p></form>
-<div class="results" id="results" hidden><dl>
-<div><dt id="lInput">Entrée</dt><dd id="rInput"></dd></div><div><dt id="lArtifact">Artefact</dt><dd id="rArtifact"></dd></div>
-<div><dt>Ratio</dt><dd id="rRatio"></dd></div><div id="encRow"><dt>Temps encode</dt><dd id="rEncode"></dd></div>
-<div id="decRow"><dt>Temps decode</dt><dd id="rDecode"></dd></div><div><dt>Tas WASM</dt><dd id="rMem"></dd></div>
-<div><dt id="lShaIn">SHA-256 entrée</dt><dd id="rShaIn"></dd></div><div><dt id="lShaArt">SHA-256 artefact</dt><dd id="rShaArt"></dd></div>
-<div><dt id="lShaOut">SHA-256 restauration</dt><dd id="rShaOut"></dd></div><div><dt>Vérification</dt><dd id="rVerify"></dd></div></dl>
-<div class="cta-row"><a class="btn primary" id="download" href="#" hidden download>Télécharger l’artefact</a></div></div></section></main><footer class="wrap"><span>© 2026 Francesco Pedulli · Italy · Tous droits réservés.</span>
+</div></header><main id="main"><nav class="crumbs wrap" aria-label="Breadcrumb"><a href="/fr/">Accueil</a> / Tableau de bord</nav><section class="wrap pagehead"><div class="kicker">Tableau de bord</div><h1>Compressez un fichier dans le navigateur.</h1><p class="lead">Local uniquement · rien ne quitte cet appareil</p></section>
+<section class="wrap block"><div class="callout"><h2>Compression temporairement verrouillée</h2><p>La démo de compression dans le navigateur est temporairement indisponible. Le reste du site reste accessible. Pour une évaluation privée, demandez un pilote.</p>
+<div class="cta-row"><a class="btn primary" href="/fr/contact/">Demander un pilote</a><a class="btn" href="/fr/evidence/">Voir les preuves</a></div></div></section></main><footer class="wrap"><span>© 2026 Francesco Pedulli · Italy · Tous droits réservés.</span>
 <span>Moins construire. Plus vérifier. · <a href="#main">Retour en haut ↑</a></span></footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="/assets/app.js"></script></body></html>

@@ -18,25 +18,9 @@
 <nav aria-label="Sprache"><a href="/de/">Start</a><a href="/de/technology/">Technologie</a><a href="/de/research/">Forschung</a><a href="/de/evidence/">Evidenz</a><a href="/de/security/">Sicherheit</a><a href="/de/pilot/">Pilot</a><a href="/de/dashboard/" aria-current="page">Dashboard</a><a href="/de/faq/">FAQ</a><a href="/de/about/">Über</a><a href="/de/contact/">Kontakt</a></nav>
 <div class="langs" aria-label="Sprache"><a href="/dashboard/">EN</a><a href="/it/dashboard/">IT</a><a href="/de/dashboard/" aria-current="true">DE</a><a href="/fr/dashboard/">FR</a><a href="/es/dashboard/">ES</a></div>
 <a class="btn primary cta" href="/de/pilot/">Pilot anfragen</a>
-</div></header><main id="main"><nav class="crumbs wrap" aria-label="Breadcrumb"><a href="/de/">Start</a> / Dashboard</nav><section class="wrap pagehead"><div class="kicker">Dashboard</div><h1>Datei im Browser komprimieren.</h1><p class="lead">Datei hochladen. Der Codec läuft lokal als WebAssembly; nichts wird an einen Server gesendet. Das Artefakt wird durch separate Dekodierung und SHA-256 geprüft.</p>
-<p class="note">Nur lokal · nichts verlässt dieses Gerät</p></section>
-<section class="wrap block"><div class="modes" role="group" aria-label="Mode">
-<button class="btn primary" id="modeCompress" type="button" aria-pressed="true">Komprimieren</button>
-<button class="btn" id="modeDecode" type="button" aria-pressed="false">Artefakt dekodieren</button></div>
-<form id="uploadForm" novalidate>
-<div class="drop" id="drop"><span class="big" id="dropLabel">Datei ablegen oder auswählen</span><span id="fileName" class="mono" style="font-size:12px"></span>
-<input type="file" id="fileInput" accept="*/*"></div>
-<p class="note" id="fileNote" style="margin-top:14px">Bestes Verhältnis. Große Dateien können Minuten dauern. Limit 8 MB.</p>
-<p class="note" id="formatNote">Bereits komprimierte Formate (PDF, ZIP, JPG, PNG, MP4) zeigen meist geringere Gewinne.</p>
-<div class="cta-row"><button class="btn primary" id="compressBtn" type="submit">Komprimieren &amp; prüfen</button></div>
-<div class="progress" id="progress"><i></i></div><p class="note" id="status"></p></form>
-<div class="results" id="results" hidden><dl>
-<div><dt id="lInput">Input</dt><dd id="rInput"></dd></div><div><dt id="lArtifact">Artefakt</dt><dd id="rArtifact"></dd></div>
-<div><dt>Verhältnis</dt><dd id="rRatio"></dd></div><div id="encRow"><dt>Encode-Zeit</dt><dd id="rEncode"></dd></div>
-<div id="decRow"><dt>Decode-Zeit</dt><dd id="rDecode"></dd></div><div><dt>WASM-Heap</dt><dd id="rMem"></dd></div>
-<div><dt id="lShaIn">SHA-256 Eingabe</dt><dd id="rShaIn"></dd></div><div><dt id="lShaArt">SHA-256 Artefakt</dt><dd id="rShaArt"></dd></div>
-<div><dt id="lShaOut">SHA-256 Wiederherstellung</dt><dd id="rShaOut"></dd></div><div><dt>Prüfung</dt><dd id="rVerify"></dd></div></dl>
-<div class="cta-row"><a class="btn primary" id="download" href="#" hidden download>Artefakt herunterladen</a></div></div></section></main><footer class="wrap"><span>© 2026 Francesco Pedulli · Italy · Alle Rechte vorbehalten.</span>
+</div></header><main id="main"><nav class="crumbs wrap" aria-label="Breadcrumb"><a href="/de/">Start</a> / Dashboard</nav><section class="wrap pagehead"><div class="kicker">Dashboard</div><h1>Datei im Browser komprimieren.</h1><p class="lead">Nur lokal · nichts verlässt dieses Gerät</p></section>
+<section class="wrap block"><div class="callout"><h2>Komprimierung vorübergehend gesperrt</h2><p>Die Browser-Komprimierungsdemo ist vorübergehend nicht verfügbar. Alle anderen Bereiche der Website bleiben zugänglich. Für eine private Evaluation fordern Sie ein Pilotprojekt an.</p>
+<div class="cta-row"><a class="btn primary" href="/de/contact/">Pilot anfragen</a><a class="btn" href="/de/evidence/">Evidenz ansehen</a></div></div></section></main><footer class="wrap"><span>© 2026 Francesco Pedulli · Italy · Alle Rechte vorbehalten.</span>
 <span>Weniger bauen. Mehr prüfen. · <a href="#main">Nach oben ↑</a></span></footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="/assets/app.js"></script></body></html>
