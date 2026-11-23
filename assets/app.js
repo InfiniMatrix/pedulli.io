@@ -13,6 +13,11 @@ window.ALLI18N={"en": {"ev_showing": "Showing 42 files", "dash_choose": "Choose 
  function axis(vs,unit){var nums=vs.filter(function(x){return typeof x==='number'&&isFinite(x)});var best=nums.length?Math.min.apply(null,nums):null;
    return vs.map(function(x){if(typeof x!=='number'||!isFinite(x))return '<span class="mono">—</span>';
      return x===best?'<span class="mono best">'+fmt(x)+(unit||'')+'</span>':'<span class="mono">'+fmt(x)+(unit||'')+'</span>'}).join(' ')}
+ /* time/memory: green ONLY on SRD, and ONLY when SRD is the lowest measured value. */
+ function axisSrd(vs,unit){var nums=vs.filter(function(x){return typeof x==='number'&&isFinite(x)});var best=nums.length?Math.min.apply(null,nums):null;
+   var srdWins=(typeof vs[0]==='number'&&isFinite(vs[0])&&vs[0]===best);
+   return vs.map(function(x,i){if(typeof x!=='number'||!isFinite(x))return '<span class="mono">—</span>';
+     return (srdWins&&i===0)?'<span class="mono best">'+fmt(x)+(unit||'')+'</span>':'<span class="mono">'+fmt(x)+(unit||'')+'</span>'}).join(' ')}
  function mark(label,srd,other){if(typeof srd!=='number'||!isFinite(srd)||typeof other!=='number'||!isFinite(other))
    return '<span class="mono">'+label+' unmeasured</span>';
    return srd<other?'<span class="yes">'+label+' ✓</span>':'<span class="no">'+label+' ✗</span>'}
@@ -53,11 +58,11 @@ window.ALLI18N={"en": {"ev_showing": "Showing 42 files", "dash_choose": "Choose 
      t.innerHTML=(rec.records||[]).map(function(r){var k=key(r),c=cm[k]||{},b=bm[k]||{};
        var st=mark('PAQ',b.enc_s,c.paq&&c.paq.enc_s)+' · '+mark('cmix*',b.enc_s,c.cmix&&c.cmix.enc_s);
        var vs=[b.enc_s,c.paq&&c.paq.enc_s,c.cmix&&c.cmix.enc_s].concat(ks.map(function(x){return c[x]&&c[x].enc_s}));
-       return tr([cell(r.file+' '+lab(b)),cell(axis(vs,'s')),cell(st)])}).join('');
+       return tr([cell(r.file+' '+lab(b)),cell(axisSrd(vs,'s')),cell(st)])}).join('');
      m.innerHTML=(rec.records||[]).map(function(r){var k=key(r),c=cm[k]||{},b=bm[k]||{};
        var st=mark('PAQ',b.enc_rss_kib,c.paq&&c.paq.enc_rss_kib)+' · '+mark('cmix*',b.enc_rss_kib,c.cmix&&c.cmix.enc_rss_kib);
        var vs=[b.enc_rss_kib,c.paq&&c.paq.enc_rss_kib,c.cmix&&c.cmix.enc_rss_kib].concat(ks.map(function(x){return c[x]&&c[x].enc_rss_kib}));
-       return tr([cell(r.file+' '+lab(b)),cell(axis(vs,' KB')),cell(st)])}).join('');
+       return tr([cell(r.file+' '+lab(b)),cell(axisSrd(vs,' KB')),cell(st)])}).join('');
    }).catch(function(){s.innerHTML=tr(['<td colspan="2">—</td>']);[t,m].forEach(function(x){x.innerHTML=tr(['<td colspan="3">—</td>'])})});
  }
  function sha(b){return crypto.subtle.digest('SHA-256',b).then(function(d){
