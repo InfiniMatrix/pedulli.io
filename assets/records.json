@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-23",
- "source_sha256": "0e99176c1c8f951fa12a786c712df0b911878f16011fcb6ee8792ac9da013899",
+ "source_sha256": "d2f87f6363b454e74851771ab15d3129964f85514dc9c6f0dc698568215e2478",
  "binary_sha256": "8c905ecfbb580a125b027a56d162c5e2a3db26bb36ce1336ac44f158bb33b0ff",
  "records": [
   {
@@ -551,11 +551,11 @@
   }
  ],
  "comparator_provenance": {
-  "paq": "paq8px v217 -8 built and run locally 2026-11-23; 13 bars reproduced exactly from on-disk artifacts",
+  "paq": "paq8px v217 -8 built and run locally 2026-11-23; 13 bars reproduced exactly from on-disk artifacts (10 of the 13 PAQ-win files; 3 Silesia wins use external PAQ bars)",
   "cmix": "published unverified reference, not run locally"
  },
  "status": "verified_exact_no_universal_record",
- "claim": "13 of 42 files beat locally measured PAQ v217; 4 of those also beat published cmix. No universal record.",
+ "claim": "13 of 42 files beat measured PAQ v217 (10 with locally reproduced bars); 4 of those also beat published cmix. No universal record.",
  "authoritative_wins": {
   "beat_paq": 13,
   "beat_both": 4,
@@ -578,5 +578,5 @@
   ]
  },
  "header_update_note": "2026-11-23: comment-only header update to 13 wins / 4 both after local PAQ bar verification; binary byte-identical (8c905ecf...)",
- "record_claim": "none: no universal four-corpus record; 13/42 beat locally measured PAQ, 4 also beat published cmix"
+ "record_claim": "none: no universal four-corpus record; 13/42 beat PAQ (10 local bars), 4 also beat published cmix"
 }
