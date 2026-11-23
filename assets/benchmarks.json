@@ -5,13 +5,13 @@
   {
    "corpus": "calgary",
    "file": "bib",
-   "level": "L1 reference",
+   "level": "best setting",
    "input": 111261,
    "artifact": 20340,
-   "enc_s": 3.88,
-   "enc_rss_kib": 150876,
-   "dec_s": 0.68,
-   "dec_rss_kib": 150704,
+   "enc_s": 150.25,
+   "enc_rss_kib": 352640.0,
+   "dec_s": 16.83,
+   "dec_rss_kib": 350344.0,
    "exact": true
   },
   {
@@ -89,13 +89,13 @@
   {
    "corpus": "calgary",
    "file": "paper1",
-   "level": "L1 reference",
+   "level": "best setting",
    "input": 53161,
    "artifact": 11753,
-   "enc_s": 2.31,
-   "enc_rss_kib": 134344,
-   "dec_s": 0.3,
-   "dec_rss_kib": 134244,
+   "enc_s": 140.43,
+   "enc_rss_kib": 349660.0,
+   "dec_s": null,
+   "dec_rss_kib": null,
    "exact": true
   },
   {
@@ -125,13 +125,13 @@
   {
    "corpus": "calgary",
    "file": "paper4",
-   "level": "L1 reference",
+   "level": "best setting",
    "input": 13286,
    "artifact": 3412,
-   "enc_s": 0.61,
-   "enc_rss_kib": 121972,
-   "dec_s": 0.12,
-   "dec_rss_kib": 121820,
+   "enc_s": 100.99,
+   "enc_rss_kib": 336800.0,
+   "dec_s": null,
+   "dec_rss_kib": null,
    "exact": true
   },
   {

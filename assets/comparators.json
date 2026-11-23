@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-21",
- "method": "Measured 2026-11-21 on the 42-file FOUR_CORPUS_RECORD ledger. Each (file, compressor) is a separate OS process, wrapped as `/usr/bin/time -v <compressor>`; wall time is the parent's time.monotonic() delta around that subprocess, peak RSS is parsed from GNU time's 'Maximum resident set size (kbytes)'. Per-run timeout 300 s (process group killed on timeout; null bytes+time+RSS and a reason are recorded). gzip: /usr/bin/gzip -9 -c (stdin-file argument, gzip header included). xz: /usr/bin/xz -9 -c (LZMA2 preset 9). zstd: one-shot Python ctypes call to libzstd.so.1 ZSTD_compress(dst, ZSTD_compressBound(n), src, n, level=22). brotli: one-shot Python ctypes call to libbrotlienc.so.1 BrotliEncoderCompress(quality=11, lgwin=22, mode=0=BROTLI_MODE_GENERIC, input_size, input, &out_size, dst), with dst capacity from BrotliEncoderMaxCompressedSize. zstd/brotli RSS therefore includes the Python interpreter baseline; gzip/xz RSS is the native tool. Runs are sequential (no parallel CPU contention). cmix_bar/paq_bar are published sizes copied from the ledger only; their encode time and RSS were NOT locally measured and are null (source='published_size_only'). Ledger input_bytes is blank for all silesia rows and the hutter enwik8 row; real on-disk sizes were used and the blank is recorded per row. Calgary/Canterbury input_bytes match on-disk sizes.",
+ "generated": "2026-11-23",
+ "method": "gzip/xz/zstd/brotli local same-byte runs; PAQ v217 local runs where recorded; cmix time/RSS unmeasured (published aggregate only).",
  "rows": [
   {
    "corpus": "calgary",
@@ -39,10 +39,12 @@
    },
    "paq": {
     "bytes": 19574,
-    "enc_s": null,
-    "enc_rss_kib": null,
-    "source": "published_size_only",
-    "note": "published size from ledger; time/RSS not measured"
+    "enc_s": 32.435,
+    "enc_rss_kib": 1823168.0,
+    "source": "local_paq8px_v217",
+    "note": "paq8px v217 -8, local same-byte run, exact restore, separate process",
+    "dec_s": 29.662,
+    "dec_rss_kib": 1823168.0
    }
   },
   {
@@ -82,10 +84,12 @@
    },
    "paq": {
     "bytes": 182977,
-    "enc_s": null,
-    "enc_rss_kib": null,
-    "source": "published_size_only",
-    "note": "published size from ledger; time/RSS not measured"
+    "enc_s": 178.791,
+    "enc_rss_kib": 2020868.0,
+    "source": "local_paq8px_v217",
+    "note": "paq8px v217 -8, local same-byte run, exact restore, separate process",
+    "dec_s": 188.504,
+    "dec_rss_kib": 2020800.0
    }
   },
   {
@@ -125,10 +129,12 @@
    },
    "paq": {
     "bytes": 113553,
-    "enc_s": null,
-    "enc_rss_kib": null,
-    "source": "published_size_only",
-    "note": "published size from ledger; time/RSS not measured"
+    "enc_s": 152.523,
+    "enc_rss_kib": 2019716.0,
+    "source": "local_paq8px_v217",
+    "note": "paq8px v217 -8, local same-byte run, exact restore, separate process",
+    "dec_s": 151.681,
+    "dec_rss_kib": 2019648.0
    }
   },
   {
@@ -813,10 +819,12 @@
    },
    "paq": {
     "bytes": 33037,
-    "enc_s": null,
-    "enc_rss_kib": null,
-    "source": "published_size_only",
-    "note": "published size from ledger; time/RSS not measured"
+    "enc_s": 28.453,
+    "enc_rss_kib": 1866048.0,
+    "source": "local_paq8px_v217",
+    "note": "paq8px v217 -8, local same-byte run, exact restore, separate process",
+    "dec_s": 27.401,
+    "dec_rss_kib": 1865536.0
    }
   },
   {
@@ -856,10 +864,12 @@
    },
    "paq": {
     "bytes": 31486,
-    "enc_s": null,
-    "enc_rss_kib": null,
-    "source": "published_size_only",
-    "note": "published size from ledger; time/RSS not measured"
+    "enc_s": 34.666,
+    "enc_rss_kib": 1851200.0,
+    "source": "local_paq8px_v217",
+    "note": "paq8px v217 -8, local same-byte run, exact restore, separate process",
+    "dec_s": 26.012,
+    "dec_rss_kib": 1851200.0
    }
   },
   {
@@ -899,10 +909,12 @@
    },
    "paq": {
     "bytes": 5405,
-    "enc_s": null,
-    "enc_rss_kib": null,
-    "source": "published_size_only",
-    "note": "published size from ledger; time/RSS not measured"
+    "enc_s": 38.827,
+    "enc_rss_kib": 1547200.0,
+    "source": "local_paq8px_v217",
+    "note": "paq8px v217 -8, local same-byte run, exact restore, separate process",
+    "dec_s": 30.677,
+    "dec_rss_kib": 1546944.0
    }
   },
   {
@@ -984,11 +996,13 @@
     "note": "published size from ledger; time/RSS not measured"
    },
    "paq": {
-    "bytes": 865,
-    "enc_s": null,
-    "enc_rss_kib": null,
-    "source": "published_size_only",
-    "note": "published size from ledger; time/RSS not measured"
+    "bytes": 866,
+    "enc_s": 2.369,
+    "enc_rss_kib": 388032.0,
+    "source": "local_paq8px_v217",
+    "note": "paq8px v217 -1, local same-byte run, exact restore, separate process",
+    "dec_s": 1.361,
+    "dec_rss_kib": 387776.0
    }
   },
   {

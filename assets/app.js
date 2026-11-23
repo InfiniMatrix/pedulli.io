@@ -13,6 +13,9 @@ window.ALLI18N={"en": {"ev_showing": "Showing 42 files", "dash_choose": "Choose 
  function axis(vs,unit){var nums=vs.filter(function(x){return typeof x==='number'&&isFinite(x)});var best=nums.length?Math.min.apply(null,nums):null;
    return vs.map(function(x){if(typeof x!=='number'||!isFinite(x))return '<span class="mono">—</span>';
      return x===best?'<span class="mono best">'+fmt(x)+(unit||'')+'</span>':'<span class="mono">'+fmt(x)+(unit||'')+'</span>'}).join(' ')}
+ function mark(label,srd,other){if(typeof srd!=='number'||!isFinite(srd)||typeof other!=='number'||!isFinite(other))
+   return '<span class="mono">'+label+' unmeasured</span>';
+   return srd<other?'<span class="yes">'+label+' ✓</span>':'<span class="no">'+label+' ✗</span>'}
  function key(r){return (r.corpus||'')+'/'+(r.file||'')}
  function initLedger(){
    var body=$('#ledgerBody');if(!body)return;
@@ -48,10 +51,14 @@ window.ALLI18N={"en": {"ev_showing": "Showing 42 files", "dash_choose": "Choose 
      s.innerHTML=(rec.records||[]).map(function(r){var k=key(r),c=cm[k]||{},b=bm[k]||{};
        return tr([cell(r.file+' '+lab(b)),cell(axis([r.srd,r.cmix,r.paq].concat(ks.map(function(x){return c[x]&&c[x].bytes}))) )])}).join('');
      t.innerHTML=(rec.records||[]).map(function(r){var k=key(r),c=cm[k]||{},b=bm[k]||{};
-       return tr([cell(r.file+' '+lab(b)),cell(axis([b.enc_s,null,null].concat(ks.map(function(x){return c[x]&&c[x].enc_s})),'s'))])}).join('');
+       var st=mark('PAQ',b.enc_s,c.paq&&c.paq.enc_s)+' · '+mark('cmix*',b.enc_s,c.cmix&&c.cmix.enc_s);
+       var vs=[b.enc_s,c.paq&&c.paq.enc_s,c.cmix&&c.cmix.enc_s].concat(ks.map(function(x){return c[x]&&c[x].enc_s}));
+       return tr([cell(r.file+' '+lab(b)),cell(axis(vs,'s')),cell(st)])}).join('');
      m.innerHTML=(rec.records||[]).map(function(r){var k=key(r),c=cm[k]||{},b=bm[k]||{};
-       return tr([cell(r.file+' '+lab(b)),cell(axis([b.enc_rss_kib,null,null].concat(ks.map(function(x){return c[x]&&c[x].enc_rss_kib})),' KB'))])}).join('');
-   }).catch(function(){[s,t,m].forEach(function(x){x.innerHTML=tr(['<td colspan="2">—</td>'])})});
+       var st=mark('PAQ',b.enc_rss_kib,c.paq&&c.paq.enc_rss_kib)+' · '+mark('cmix*',b.enc_rss_kib,c.cmix&&c.cmix.enc_rss_kib);
+       var vs=[b.enc_rss_kib,c.paq&&c.paq.enc_rss_kib,c.cmix&&c.cmix.enc_rss_kib].concat(ks.map(function(x){return c[x]&&c[x].enc_rss_kib}));
+       return tr([cell(r.file+' '+lab(b)),cell(axis(vs,' KB')),cell(st)])}).join('');
+   }).catch(function(){s.innerHTML=tr(['<td colspan="2">—</td>']);[t,m].forEach(function(x){x.innerHTML=tr(['<td colspan="3">—</td>'])})});
  }
  function sha(b){return crypto.subtle.digest('SHA-256',b).then(function(d){
    return Array.prototype.map.call(new Uint8Array(d),function(x){return ('0'+x.toString(16)).slice(-2)}).join('')})}
