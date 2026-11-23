@@ -23,13 +23,11 @@
 <div class="filters" id="ledgerFilter"><button class="btn primary" data-f="all">Tutti</button><button class="btn" data-f="calgary">Calgary</button><button class="btn" data-f="canterbury">Canterbury</button><button class="btn" data-f="silesia">Silesia</button><button class="btn" data-f="hutter">Hutter</button></div>
 <div class="scroll"><table><thead><tr><th>Corpus</th><th>File</th><th>Input</th><th>SRD</th><th>cmix</th><th>PAQ</th><th>zstd</th><th>xz</th><th>brotli</th><th>gzip</th><th>Stato</th></tr></thead>
 <tbody id="ledgerBody"><tr><td colspan="11">…</td></tr></tbody></table></div>
-<p class="note">SRD e PAQ sono misurati qui; cmix è pubblicato, non verificato. Valore disponibile più basso evidenziato. non pubblicato.</p></section>
-<section class="wrap block"><h2>Dimensione</h2><p class="note">SRD e PAQ sono misurati qui; cmix è pubblicato, non verificato. Valore disponibile più basso evidenziato.</p>
-<div class="scroll"><table><thead><tr><th>File</th><th>Sette comparatori, byte</th></tr></thead><tbody id="sizeBody"></tbody></table></div></section>
-<section class="wrap block"><h2>Tempo</h2><p class="note">SRD · PAQ · cmix · zstd · xz · brotli · gzip — SRD è evidenziato solo quando ha il tempo di encode misurato più basso; altrimenti nessun valore è evidenziato. Controlli PAQ/cmix solo dove misurati.</p>
-<div class="scroll"><table><thead><tr><th>File</th><th>Secondi encode</th><th>Stato</th></tr></thead><tbody id="timeBody"></tbody></table></div></section>
-<section class="wrap block"><h2>Memoria</h2><p class="note">SRD · PAQ · cmix · zstd · xz · brotli · gzip — SRD è evidenziato solo quando ha la RSS di picco misurata più bassa; altrimenti nessun valore è evidenziato. Controlli PAQ/cmix solo dove misurati.</p>
-<div class="scroll"><table><thead><tr><th>File</th><th>RSS di picco, KiB</th><th>Stato</th></tr></thead><tbody id="memBody"></tbody></table></div></section>
+<p class="note">SRD e PAQ sono misurati qui; ogni valore cmix è pubblicato, non verificato e non conta per un record.</p></section>
+<section class="wrap block"><h2>Tempo</h2><p class="note">SRD · PAQ · cmix · zstd · xz · brotli · gzip — SRD è evidenziato solo quando ha il tempo di encode misurato più basso; altrimenti nessun valore è evidenziato.</p>
+<div class="scroll"><table><thead><tr><th>File</th><th>Secondi encode</th></tr></thead><tbody id="timeBody"></tbody></table></div></section>
+<section class="wrap block"><h2>Memoria</h2><p class="note">SRD · PAQ · cmix · zstd · xz · brotli · gzip — SRD è evidenziato solo quando ha la RSS di picco misurata più bassa; altrimenti nessun valore è evidenziato.</p>
+<div class="scroll"><table><thead><tr><th>File</th><th>RSS di picco, KiB</th></tr></thead><tbody id="memBody"></tbody></table></div></section>
 <section class="wrap block"><div class="callout"><h2>Cosa conta come risultato</h2><p>Ripristino esatto, SHA-256 corrispondente e provenienza dichiarata del comparatore. PAQ è misurato qui; ogni valore cmix è pubblicato, non verificato e non conta come record.</p></div></section></main><footer class="wrap"><span>© 2026 Francesco Pedulli · Italy · Tutti i diritti riservati.</span>
 <span>Costruisci meno. Verifica di più. · <a href="#main">Torna su ↑</a></span></footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
