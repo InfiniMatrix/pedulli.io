@@ -5,7 +5,7 @@
   {
    "corpus": "calgary",
    "file": "bib",
-   "level": "best setting",
+   "level": "noverify ledger config",
    "input": 111261,
    "artifact": 20340,
    "enc_s": 150.25,
@@ -17,13 +17,13 @@
   {
    "corpus": "calgary",
    "file": "book1",
-   "level": "L1 reference",
+   "level": "noverify ledger config",
    "input": 768771,
    "artifact": 191391,
-   "enc_s": 21.15,
-   "enc_rss_kib": 186256,
-   "dec_s": 3.59,
-   "dec_rss_kib": 185000,
+   "enc_s": 524.88,
+   "enc_rss_kib": 614180.0,
+   "dec_s": 25.96,
+   "dec_rss_kib": 581312.0,
    "exact": true
   },
   {
@@ -89,7 +89,7 @@
   {
    "corpus": "calgary",
    "file": "paper1",
-   "level": "best setting",
+   "level": "noverify L8 (A/B)",
    "input": 53161,
    "artifact": 11753,
    "enc_s": 140.43,
@@ -125,7 +125,7 @@
   {
    "corpus": "calgary",
    "file": "paper4",
-   "level": "best setting",
+   "level": "noverify L8 (A/B)",
    "input": 13286,
    "artifact": 3412,
    "enc_s": 100.99,
