@@ -31,7 +31,7 @@ window.ALLI18N={"en": {"ev_showing": "Showing 42 files", "dash_choose": "Choose 
          var cmixpub=(typeof r.cmix==='number'&&r.srd<r.cmix);
          var status=(paq&&cmixpub)?'<span class="yes">PAQ ✓ · cmix ✓</span>':(paq?'<span class="yes">PAQ ✓</span>':(cmixpub?'<span class="yes">cmix ✓</span>':'—'));
          return tr([cell('<span class="mono">'+r.corpus+'</span>'),cell('<span class="mono">'+r.file+'</span>'),
-           cell(val(r.input)),cell('<b class="mono">'+fmt(r.srd)+'</b>'),cell(val(r.cmix)),cell(val(r.paq)),
+           cell(val(r.input)),cell('<b class="mono">'+fmt(r.srd)+'</b>'),cell(val(r.cmix)),cell(val(r.paq)+((c.paq&&String(c.paq.source||'').indexOf('local')===0)?'':'†')),
            cell(c.zstd&&val(c.zstd.bytes)),cell(c.xz&&val(c.xz.bytes)),cell(c.brotli&&val(c.brotli.bytes)),
            cell(c.gzip&&val(c.gzip.bytes)),cell(status)]);
        }).join('');
