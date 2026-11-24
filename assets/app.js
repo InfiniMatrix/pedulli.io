@@ -10,9 +10,10 @@ window.ALLI18N={"en": {"ev_showing": "Showing 42 files", "dash_choose": "Choose 
  function cell(x){return '<td>'+x+'</td>'}
  function tr(c){return '<tr>'+c.join('')+'</tr>'}
  function val(x){return (x===null||x===undefined||x==='')?'<span class="mono">—</span>':'<span class="mono">'+fmt(x)+'</span>'}
- /* time/memory: green ONLY on SRD, and ONLY when SRD is the lowest measured value. */
- function axisCells(vs,unit){var nums=vs.filter(function(x){return typeof x==='number'&&isFinite(x)});var best=nums.length?Math.min.apply(null,nums):null;
-   var srdWins=(typeof vs[0]==='number'&&isFinite(vs[0])&&vs[0]===best);
+ /* time/memory: green ONLY on SRD, and ONLY when it beats the measured PAQ bar in the same row.
+    cmix time/RSS are not measured locally; gzip/xz/zstd/brotli are shown as faster context codecs. */
+ function axisCells(vs,unit){var srd=vs[0],paq=vs[1];
+   var srdWins=(typeof srd==='number'&&isFinite(srd)&&typeof paq==='number'&&isFinite(paq)&&srd<paq);
    return vs.map(function(x,i){if(typeof x!=='number'||!isFinite(x))return cell('<span class="mono">—</span>');
      return cell((srdWins&&i===0)?'<span class="mono best">'+fmt(x)+(unit||'')+'</span>':'<span class="mono">'+fmt(x)+(unit||'')+'</span>')})}
  function key(r){return (r.corpus||'')+'/'+(r.file||'')}
