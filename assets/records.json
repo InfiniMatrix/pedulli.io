@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-23",
- "source_sha256": "9f2b6846d868dd3008f165a06392724cc5f8aad0fa904a05b55088f2b7416694",
+ "generated": "2026-11-24",
+ "source_sha256": "35b8d0a0700f5af8f8318c738da685d4e52e24fd94bda7a1e497feb4df4427a2",
  "binary_sha256": "24dc25e764968d61f9e1edc06ac3a9ee478ecdd49042fb56f8fb719b3fb5d379",
  "records": [
   {
@@ -284,9 +284,9 @@
    "cmix": 1909,
    "paq": 2029,
    "beats_paq_external": true,
-   "beats_cmix_published": false,
+   "beats_cmix_published": true,
    "authoritative_paq_win": true,
-   "authoritative_both_win": false,
+   "authoritative_both_win": true,
    "nominal_bar_win_unverified": false
   },
   {
@@ -551,20 +551,19 @@
   }
  ],
  "comparator_provenance": {
-  "paq": "paq8px v217 -8 built and run locally 2026-11-23; 13 bars reproduced exactly from on-disk artifacts (10 of the 13 PAQ-win files; 3 Silesia wins use external PAQ bars)",
+  "paq": "paq8px v217 -8 built and run locally 2026-11-23; 11 bars reproduced exactly from on-disk artifacts (11 of the 14 PAQ-win files; 3 Silesia wins use external PAQ bars)",
   "cmix": "published unverified reference, not run locally"
  },
  "status": "verified_exact_no_universal_record",
- "claim": "14 of 42 files beat measured PAQ v217 (11 with locally reproduced bars); 4 of those also beat published cmix. No universal record.",
+ "claim": "14 of 42 files beat measured PAQ v217 (11 with locally reproduced bars); 5 of those also beat published cmix. No universal record.",
  "authoritative_wins": {
   "beat_paq": 14,
-  "beat_both": 4,
+  "beat_both": 5,
   "paq_only": [
    "grammar.lsp",
    "paper4",
    "paper5",
    "paper6",
-   "fields.c",
    "paper1",
    "paper2",
    "paper3",
@@ -575,9 +574,10 @@
    "xargs.1",
    "reymont",
    "sao",
-   "x-ray"
+   "x-ray",
+   "fields.c"
   ]
  },
- "header_update_note": "2026-11-23: comment-only header update to 13 wins / 4 both after local PAQ bar verification; binary byte-identical (8c905ecf...)",
- "record_claim": "none: no universal four-corpus record; 14/42 beat PAQ (11 local bars), 4 also beat published cmix"
+ "header_update_note": "2026-11-24: promoted x16 header corrected to 14 PAQ wins / 5 both (fields.c 1,901 B beats published cmix 1,909 B by 8 B); binary byte-identical to x16 build.",
+ "record_claim": "none: no universal four-corpus record; 14/42 beat PAQ (11 local bars), 5 also beat published cmix"
 }
