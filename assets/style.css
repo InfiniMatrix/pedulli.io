@@ -9,7 +9,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .wrap{width:min(1140px,92vw);margin:0 auto}
 .skip{position:absolute;left:-999px;top:0;background:var(--a);color:#04070c;padding:9px 15px;z-index:99;font-weight:700}.skip:focus{left:8px;top:8px}
 .site-head{position:sticky;top:0;z-index:40;background:rgba(7,9,15,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;gap:18px;padding:14px 0;flex-wrap:nowrap}
+.nav{display:flex;align-items:center;gap:18px;padding:14px 0;flex-wrap:wrap}
 .brand{display:inline-flex;align-items:center;gap:10px;color:var(--text);font-weight:800;letter-spacing:.13em;white-space:nowrap;font-size:15px;flex:0 0 auto}
 .brand img{width:30px;height:30px;flex:none}
 .brand b{font-weight:800}.brand b i{font-style:normal;color:var(--a)}
