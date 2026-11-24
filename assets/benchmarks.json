@@ -365,13 +365,13 @@
   {
    "corpus": "silesia",
    "file": "mozilla",
-   "level": "prior locked build L8/block64",
+   "level": "SRD 2026-11-24",
    "input": 51220480,
-   "artifact": 8780189,
-   "enc_s": 1096.21,
-   "enc_rss_kib": 1464116,
-   "dec_s": 839.27,
-   "dec_rss_kib": 1488904,
+   "artifact": 7978738,
+   "enc_s": 923.47,
+   "enc_rss_kib": 1569496,
+   "dec_s": 939.95,
+   "dec_rss_kib": 1566932,
    "exact": true
   },
   {
