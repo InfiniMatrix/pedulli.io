@@ -1,7 +1,7 @@
 {
  "generated": "2026-11-24",
- "source_sha256": "9675fe8dc1b8cde3416462ca2e0cf4a1ad3cd69f7bb6740908aa4c6e2d2bc086",
- "binary_sha256": "9b803fbf1a9d2509faf7e9b3ce594792b86fd9a7aba3a04f9595a63880a27898",
+ "source_sha256": "9e74bab86f20edf1e1f1dcfd1fe7eae2bfe4779562d36ea3667d2f6bd90277f6",
+ "binary_sha256": "ec9090e800a0c2ef2ee5e9dbb4dedc8607028d9d2499a2a2682a3e9e1b703668",
  "records": [
   {
    "corpus": "calgary",
@@ -176,11 +176,11 @@
    "corpus": "calgary",
    "file": "pic",
    "input": 513216,
-   "srd": 23754,
+   "srd": 20700,
    "cmix": 21883,
    "paq": 16907,
    "beats_paq_external": false,
-   "beats_cmix_published": false,
+   "beats_cmix_published": true,
    "authoritative_paq_win": false,
    "authoritative_both_win": false,
    "nominal_bar_win_unverified": false
@@ -345,11 +345,11 @@
    "corpus": "canterbury",
    "file": "ptt5",
    "input": 513216,
-   "srd": 23754,
+   "srd": 20700,
    "cmix": 21883,
    "paq": 16907,
    "beats_paq_external": false,
-   "beats_cmix_published": false,
+   "beats_cmix_published": true,
    "authoritative_paq_win": false,
    "authoritative_both_win": false,
    "nominal_bar_win_unverified": false
@@ -555,7 +555,7 @@
   "cmix": "published unverified reference, not run locally"
  },
  "status": "verified_exact_no_universal_record",
- "claim": "16 of 42 files beat PAQ v217; 7 of those also beat published cmix. No universal record.",
+ "claim": "16 of 42 files beat PAQ v217; 7 of those also beat published cmix. No universal record; 9 of 42 beat published cmix.",
  "authoritative_wins": {
   "beat_paq": 16,
   "beat_both": 7,
@@ -580,6 +580,6 @@
    "x-ray"
   ]
  },
- "header_update_note": "2026-11-24: new structure-aware results for mr, x-ray, geo and kennedy.xls; each reproduced by separate-process decode and byte compare against the checkpoint binary.",
+ "header_update_note": "2026-11-24: structure-aware links for mr, x-ray, geo, kennedy.xls and bilevel pic/ptt5; artifacts reproduced locally by separate-process decode, byte compare and SHA-256. Parallel trial engine preserves byte-identical artifacts.",
  "record_claim": "none: no universal four-corpus record; 16/42 beat PAQ, 7 also beat published cmix"
 }

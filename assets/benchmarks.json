@@ -161,13 +161,13 @@
   {
    "corpus": "calgary",
    "file": "pic",
-   "level": "prior locked build L8/block64",
+   "level": "SRD 2026-11-24",
    "input": 513216,
-   "artifact": 23754,
-   "enc_s": 82.2,
-   "enc_rss_kib": 891100,
-   "dec_s": 7.12,
-   "dec_rss_kib": 785100,
+   "artifact": 20700,
+   "enc_s": 9.27,
+   "enc_rss_kib": 164756,
+   "dec_s": 8.98,
+   "dec_rss_kib": 163656,
    "exact": true
   },
   {
@@ -317,13 +317,13 @@
   {
    "corpus": "canterbury",
    "file": "ptt5",
-   "level": "prior locked build L8/block64",
+   "level": "SRD 2026-11-24",
    "input": 513216,
-   "artifact": 23754,
-   "enc_s": 62.6,
-   "enc_rss_kib": 891096,
-   "dec_s": 6.47,
-   "dec_rss_kib": 785020,
+   "artifact": 20700,
+   "enc_s": 9.27,
+   "enc_rss_kib": 164756,
+   "dec_s": 8.98,
+   "dec_rss_kib": 163656,
    "exact": true
   },
   {
