@@ -81,3 +81,10 @@ window.ALLI18N={"en": {"ev_showing": "Showing 42 files", "dash_choose": "Choose 
     th.addEventListener('click',go);th.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}})})});
  });
 })();
+
+/* theme: dark by default, light on request, remembered per visitor */
+(function(){document.addEventListener('DOMContentLoaded',function(){var b=document.querySelector('.theme-btn');if(!b)return;
+ b.addEventListener('click',function(){var r=document.documentElement,l=r.getAttribute('data-theme')!=='light';
+  if(l)r.setAttribute('data-theme','light');else r.removeAttribute('data-theme');
+  try{localStorage.setItem('theme',l?'light':'dark')}catch(e){}
+  b.setAttribute('aria-pressed',l?'true':'false')})})})();
