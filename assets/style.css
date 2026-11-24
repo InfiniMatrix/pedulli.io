@@ -141,3 +141,4 @@ th[data-sort]{cursor:pointer;user-select:none}th[data-sort]:after{content:" ↕"
 .nav{grid-template-columns:auto minmax(0,1fr) auto auto auto}
 @media(max-width:1080px){.nav{grid-template-columns:auto 1fr auto auto auto}.nav .theme-btn{grid-column:3;grid-row:1}.langs{grid-column:4}.nav .cta{grid-column:5}}
 @media(max-width:860px){.nav{grid-template-columns:auto 1fr auto auto}.nav .theme-btn{grid-column:2}.langs,details.langs{grid-column:3}.menu-btn{grid-column:4}}
+.meth{color:var(--muted);max-width:78ch;padding-left:20px}.meth li{margin:6px 0}
