@@ -389,13 +389,13 @@
   {
    "corpus": "silesia",
    "file": "nci",
-   "level": "prior locked build L8/block64",
+   "level": "SRD 2026-11-24",
    "input": 33553445,
-   "artifact": 986697,
-   "enc_s": 505.86,
-   "enc_rss_kib": 1431888,
-   "dec_s": 486.51,
-   "dec_rss_kib": 1430920,
+   "artifact": 608377,
+   "enc_s": 242.55,
+   "enc_rss_kib": 1526492,
+   "dec_s": 249.08,
+   "dec_rss_kib": 1478220,
    "exact": true
   },
   {

@@ -1,7 +1,7 @@
 {
  "generated": "2026-11-24",
- "source_sha256": "9e74bab86f20edf1e1f1dcfd1fe7eae2bfe4779562d36ea3667d2f6bd90277f6",
- "binary_sha256": "ec9090e800a0c2ef2ee5e9dbb4dedc8607028d9d2499a2a2682a3e9e1b703668",
+ "source_sha256": "949cf7761fd8d72abe8fb5ab0224fdeb43acf94f2cb38067c9be7aacb12904d9",
+ "binary_sha256": "10f57f22b44eab41789a2667d6d2967498247713492decb54966a7a7240925c1",
  "records": [
   {
    "corpus": "calgary",
@@ -423,13 +423,13 @@
    "corpus": "silesia",
    "file": "nci",
    "input": 33553445,
-   "srd": 986697,
+   "srd": 608377,
    "cmix": 781325,
    "paq": 787456,
-   "beats_paq_external": false,
-   "beats_cmix_published": false,
-   "authoritative_paq_win": false,
-   "authoritative_both_win": false,
+   "beats_paq_external": true,
+   "beats_cmix_published": true,
+   "authoritative_paq_win": true,
+   "authoritative_both_win": true,
    "nominal_bar_win_unverified": false
   },
   {
@@ -555,31 +555,22 @@
   "cmix": "published unverified reference, not run locally"
  },
  "status": "verified_exact_no_universal_record",
- "claim": "16 of 42 files beat PAQ v217; 7 of those also beat published cmix. No universal record; 9 of 42 beat published cmix.",
+ "claim": "17 of 42 files beat PAQ v217; 8 of those also beat published cmix; 10 of 42 beat published cmix. No universal record.",
  "authoritative_wins": {
-  "beat_paq": 16,
-  "beat_both": 7,
-  "paq_only": [
-   "paper1",
-   "paper2",
-   "paper3",
-   "paper4",
-   "paper5",
-   "paper6",
-   "progc",
-   "trans",
-   "grammar.lsp"
-  ],
+  "beat_paq": 17,
+  "beat_both": 8,
+  "beat_cmix": 10,
   "both": [
    "geo",
    "fields.c",
    "xargs.1",
    "mr",
+   "nci",
    "reymont",
    "sao",
    "x-ray"
   ]
  },
- "header_update_note": "2026-11-24: structure-aware links for mr, x-ray, geo, kennedy.xls and bilevel pic/ptt5; artifacts reproduced locally by separate-process decode, byte compare and SHA-256. Parallel trial engine preserves byte-identical artifacts.",
- "record_claim": "none: no universal four-corpus record; 16/42 beat PAQ, 7 also beat published cmix"
+ "header_update_note": "2026-11-24: structure-aware links for mr, x-ray, geo, kennedy.xls, bilevel pic/ptt5 and SDF molfile nci; artifacts reproduced locally by separate-process decode, byte compare and SHA-256. Parallel trial engine preserves byte-identical artifacts.",
+ "record_claim": "none: no universal four-corpus record; 17/42 beat PAQ, 8 also beat published cmix"
 }
