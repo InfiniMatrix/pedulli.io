@@ -2,7 +2,7 @@
 
 > SRD is an exact lossless compressor by Francesco Pedulli (Italy). Every published size is a complete artifact that was decoded in a separate process, byte-compared with the input and checked by SHA-256.
 
-Status on 2026-11-24: 18 of 42 benchmark files beat paq8px v217 -8 (measured on the same machine), 11 beat the published cmix v21 figure, and 9 beat both: geo, fields.c, grammar.lsp, xargs.1, mr, nci, reymont, sao, x-ray. No four-corpus record is claimed.
+Status on 2026-11-24: 20 of 42 benchmark files beat paq8px v217 -8 (measured on the same machine), 11 beat the published cmix v21 figure, and 9 beat both: geo, fields.c, grammar.lsp, xargs.1, mr, nci, reymont, sao, x-ray. No four-corpus record is claimed.
 
 ## Key pages
 - [Evidence: per-file ledger, time and memory](https://pedulli.io/evidence/)
@@ -28,35 +28,35 @@ Status on 2026-11-24: 18 of 42 benchmark files beat paq8px v217 -8 (measured on 
 
 | Corpus | File | Input bytes | SRD bytes | cmix v21 (published) | paq8px v217 -8 (measured) | Status |
 |---|---|---:|---:|---:|---:|---|
-| calgary | bib | 111,261 | 19,818 | 17,180 | 19,574 | behind |
-| calgary | book1 | 768,771 | 190,678 | 173,709 | 182,977 | behind |
-| calgary | book2 | 610,856 | 118,194 | 105,918 | 113,553 | behind |
+| calgary | bib | 111,261 | 19,518 | 17,180 | 19,574 | beats paq8px |
+| calgary | book1 | 768,771 | 190,673 | 173,709 | 182,977 | behind |
+| calgary | book2 | 610,856 | 118,106 | 105,918 | 113,553 | behind |
 | calgary | geo | 102,400 | 40,349 | 42,760 | 41,988 | beats both |
-| calgary | news | 377,109 | 86,316 | 76,389 | 82,777 | behind |
+| calgary | news | 377,109 | 86,183 | 76,389 | 82,777 | behind |
 | calgary | obj1 | 21,504 | 7,725 | 7,053 | 6,969 | behind |
 | calgary | obj2 | 246,814 | 46,780 | 40,139 | 40,353 | behind |
-| calgary | paper1 | 53,161 | 11,349 | 10,831 | 12,349 | beats paq8px |
-| calgary | paper2 | 82,199 | 18,420 | 17,169 | 19,531 | beats paq8px |
-| calgary | paper3 | 46,526 | 11,468 | — | 12,380 | beats paq8px |
-| calgary | paper4 | 13,286 | 3,253 | — | 3,971 | beats paq8px |
-| calgary | paper5 | 11,954 | 3,124 | — | 3,690 | beats paq8px |
-| calgary | paper6 | 38,105 | 8,349 | — | 8,977 | beats paq8px |
+| calgary | paper1 | 53,161 | 11,315 | 10,831 | 12,349 | beats paq8px |
+| calgary | paper2 | 82,199 | 18,402 | 17,169 | 19,531 | beats paq8px |
+| calgary | paper3 | 46,526 | 11,441 | — | 12,380 | beats paq8px |
+| calgary | paper4 | 13,286 | 3,235 | — | 3,971 | beats paq8px |
+| calgary | paper5 | 11,954 | 3,110 | — | 3,690 | beats paq8px |
+| calgary | paper6 | 38,105 | 8,303 | — | 8,977 | beats paq8px |
 | calgary | pic | 513,216 | 20,700 | 21,883 | 16,907 | beats cmix |
-| calgary | progc | 39,611 | 8,410 | 8,193 | 8,863 | beats paq8px |
-| calgary | progl | 71,646 | 9,724 | 8,788 | 9,487 | behind |
-| calgary | progp | 49,379 | 6,920 | 6,126 | 6,329 | behind |
-| calgary | trans | 93,695 | 10,809 | 9,990 | 10,966 | beats paq8px |
-| canterbury | alice29.txt | 152,089 | 34,317 | 31,076 | 33,037 | behind |
-| canterbury | asyoulik.txt | 125,179 | 32,303 | 29,434 | 31,486 | behind |
-| canterbury | cp.html | 24,603 | 5,380 | 4,746 | 5,405 | beats paq8px |
-| canterbury | fields.c | 11,150 | 1,821 | 1,909 | 2,029 | beats both |
-| canterbury | grammar.lsp | 3,721 | 746 | 771 | 865 | beats both |
+| calgary | progc | 39,611 | 8,369 | 8,193 | 8,863 | beats paq8px |
+| calgary | progl | 71,646 | 9,467 | 8,788 | 9,487 | beats paq8px |
+| calgary | progp | 49,379 | 6,893 | 6,126 | 6,329 | behind |
+| calgary | trans | 93,695 | 10,767 | 9,990 | 10,966 | beats paq8px |
+| canterbury | alice29.txt | 152,089 | 34,325 | 31,076 | 33,037 | behind |
+| canterbury | asyoulik.txt | 125,179 | 32,320 | 29,434 | 31,486 | behind |
+| canterbury | cp.html | 24,603 | 5,349 | 4,746 | 5,405 | beats paq8px |
+| canterbury | fields.c | 11,150 | 1,793 | 1,909 | 2,029 | beats both |
+| canterbury | grammar.lsp | 3,721 | 739 | 771 | 865 | beats both |
 | canterbury | kennedy.xls | 1,029,744 | 8,940 | 7,955 | 8,039 | behind |
-| canterbury | lcet10.txt | 426,754 | 81,272 | 73,365 | 78,955 | behind |
-| canterbury | plrabn12.txt | 481,861 | 120,929 | 112,263 | 117,355 | behind |
+| canterbury | lcet10.txt | 426,754 | 81,216 | 73,365 | 78,955 | behind |
+| canterbury | plrabn12.txt | 481,861 | 120,935 | 112,263 | 117,355 | behind |
 | canterbury | ptt5 | 513,216 | 20,700 | 21,883 | 16,907 | beats cmix |
 | canterbury | sum | 38,240 | 7,559 | 6,870 | 6,642 | behind |
-| canterbury | xargs.1 | 4,227 | 979 | 1,123 | 1,297 | beats both |
+| canterbury | xargs.1 | 4,227 | 978 | 1,123 | 1,297 | beats both |
 | silesia | dickens | 10,192,446 | 2,011,227 | 1,802,071 | 1,900,544 | behind |
 | silesia | mozilla | 51,220,480 | 7,978,738 | 6,634,210 | 6,177,792 | behind |
 | silesia | mr | 9,970,564 | 1,567,859 | 1,828,423 | 1,789,952 | beats both |
