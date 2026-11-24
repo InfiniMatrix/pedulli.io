@@ -44,10 +44,10 @@
    "level": "SRD 2026-11-24",
    "input": 102400,
    "artifact": 40349,
-   "enc_s": 0.37,
-   "enc_rss_kib": 177228,
-   "dec_s": 0.3,
-   "dec_rss_kib": 177020,
+   "enc_s": 0.25,
+   "enc_rss_kib": 76280,
+   "dec_s": 0.26,
+   "dec_rss_kib": 75860,
    "exact": true
   },
   {
@@ -283,11 +283,11 @@
    "file": "kennedy.xls",
    "level": "SRD 2026-11-24",
    "input": 1029744,
-   "artifact": 8943,
-   "enc_s": 1.08,
-   "enc_rss_kib": 188560,
-   "dec_s": 0.75,
-   "dec_rss_kib": 185712,
+   "artifact": 8940,
+   "enc_s": 0.97,
+   "enc_rss_kib": 94572,
+   "dec_s": 0.81,
+   "dec_rss_kib": 91636,
    "exact": true
   },
   {
@@ -379,11 +379,11 @@
    "file": "mr",
    "level": "SRD 2026-11-24",
    "input": 9970564,
-   "artifact": 1567859,
-   "enc_s": 23.41,
-   "enc_rss_kib": 408812,
-   "dec_s": 23.87,
-   "dec_rss_kib": 389296,
+   "artifact": 1567857,
+   "enc_s": 22.56,
+   "enc_rss_kib": 118932,
+   "dec_s": 24.54,
+   "dec_rss_kib": 99180,
    "exact": true
   },
   {
@@ -437,13 +437,13 @@
   {
    "corpus": "silesia",
    "file": "samba",
-   "level": "prior locked build L8/block64",
+   "level": "SRD 2026-11-24",
    "input": 21606400,
-   "artifact": 2516136,
-   "enc_s": 647.75,
-   "enc_rss_kib": 1413464,
-   "dec_s": 698.5,
-   "dec_rss_kib": 1410964,
+   "artifact": 2089641,
+   "enc_s": 320.91,
+   "enc_rss_kib": 1459948,
+   "dec_s": 349.92,
+   "dec_rss_kib": 1451768,
    "exact": true
   },
   {
@@ -476,10 +476,10 @@
    "level": "SRD 2026-11-24",
    "input": 8474240,
    "artifact": 3480908,
-   "enc_s": 20.52,
-   "enc_rss_kib": 379740,
-   "dec_s": 22.4,
-   "dec_rss_kib": 363140,
+   "enc_s": 24.17,
+   "enc_rss_kib": 107692,
+   "dec_s": 24.47,
+   "dec_rss_kib": 90896,
    "exact": true
   },
   {
