@@ -401,13 +401,13 @@
   {
    "corpus": "silesia",
    "file": "ooffice",
-   "level": "prior locked build L8/block64",
+   "level": "link 7 (x86 PE) PUMP-2 L8",
    "input": 6152192,
-   "artifact": 1494545,
-   "enc_s": 142.16,
-   "enc_rss_kib": 1379556,
-   "dec_s": 370.06,
-   "dec_rss_kib": 1377812,
+   "artifact": 1437444,
+   "enc_s": 89.2,
+   "enc_rss_kib": 1355060,
+   "dec_s": 94.11,
+   "dec_rss_kib": 1348872,
    "exact": true
   },
   {
