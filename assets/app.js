@@ -61,3 +61,23 @@ window.ALLI18N={"en": {"ev_showing": "Showing 42 files", "dash_choose": "Choose 
  function hex(b){return Array.prototype.map.call(new Uint8Array(b),function(x){return ('0'+x.toString(16)).slice(-2)}).join('')}
  document.addEventListener('DOMContentLoaded',function(){initLedger();initAxes()});
 })();
+/* 2026-11-24c: mobile menu, language picker close, sortable tables */
+(function(){
+ 'use strict';
+ document.addEventListener('DOMContentLoaded',function(){
+  var h=document.querySelector('.site-head'),b=document.querySelector('.menu-btn');
+  if(h&&b)b.addEventListener('click',function(){var o=h.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false')});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(h)h.classList.remove('open');if(b)b.setAttribute('aria-expanded','false');var d=document.querySelector('details.langs[open]');if(d)d.removeAttribute('open')}});
+  document.addEventListener('click',function(e){var d=document.querySelector('details.langs[open]');if(d&&!d.contains(e.target))d.removeAttribute('open')});
+  var num=function(t){var x=(t||'').replace(/[^0-9.\-−]/g,'').replace('−','-');return x===''||isNaN(+x)?null:+x};
+  Array.prototype.forEach.call(document.querySelectorAll('.scroll table'),function(t){
+   var ths=t.querySelectorAll('thead th');
+   Array.prototype.forEach.call(ths,function(th,i){th.setAttribute('data-sort','');th.setAttribute('tabindex','0');
+    var go=function(){var tb=t.tBodies[0];if(!tb)return;var asc=th.getAttribute('aria-sort')!=='ascending';
+     Array.prototype.forEach.call(ths,function(x){x.removeAttribute('aria-sort')});th.setAttribute('aria-sort',asc?'ascending':'descending');
+     var rs=Array.prototype.slice.call(tb.rows);rs.sort(function(a,c){var x=a.cells[i]?a.cells[i].textContent:'',y=c.cells[i]?c.cells[i].textContent:'';var p=num(x),q=num(y);
+      var r=(p!==null&&q!==null)?p-q:(p===null&&q!==null?1:(q===null&&p!==null?-1:x.localeCompare(y)));return asc?r:-r});
+     rs.forEach(function(r){tb.appendChild(r)})};
+    th.addEventListener('click',go);th.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}})})});
+ });
+})();

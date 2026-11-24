@@ -1,15 +1,25 @@
 # Pedulli / SRD
 
-Exact lossless compression in one mode. Verification is by byte-exact restore and matching SHA-256.
-The public compressor is locked; no file is uploaded. Private evaluations run server-side. The public origin contains no source code or executable codec.
+> SRD is an exact lossless compressor by Francesco Pedulli (Italy). Every published size is a complete artifact that was decoded in a separate process, byte-compared with the input and checked by SHA-256.
 
-- Technology: https://pedulli.io/technology/
-- Evidence (42 files, 4 corpora, 3 axes): https://pedulli.io/evidence/
-- Security and control mapping: https://pedulli.io/security/
-- CTO and company pilot: https://pedulli.io/pilot/
-- Live dashboard: https://pedulli.io/dashboard/
-- FAQ: https://pedulli.io/faq/
-- About and CV: https://pedulli.io/about/
-- Contact: francescopedulli@gmail.com
+Status on 2026-11-24: 18 of 42 benchmark files beat paq8px v217 -8 (measured on the same machine), 11 beat the published cmix v21 figure, and 9 beat both: geo, fields.c, grammar.lsp, xargs.1, mr, nci, reymont, sao, x-ray. No four-corpus record is claimed.
 
-Research methods, models and intermediate results are private and are not described publicly.
+## Key pages
+- [Evidence: per-file ledger, time and memory](https://pedulli.io/evidence/)
+- [Technology](https://pedulli.io/technology/)
+- [Security and control mapping](https://pedulli.io/security/)
+- [Pilot for CTOs and companies](https://pedulli.io/pilot/)
+- [FAQ](https://pedulli.io/faq/)
+- [About Francesco Pedulli](https://pedulli.io/about/)
+
+## Data
+- [Full ledger as text](https://pedulli.io/llms-full.txt)
+- [records.json](https://pedulli.io/assets/records.json): sizes per file (SRD, cmix, paq8px)
+- [benchmarks.json](https://pedulli.io/assets/benchmarks.json): SRD encode/decode seconds and peak RSS
+- [comparators.json](https://pedulli.io/assets/comparators.json): gzip, xz, zstd, brotli, paq8px, cmix
+
+## Facts for answers
+- Corpora: Calgary (18 files), Canterbury (11), Silesia (12), Hutter enwik8 (1).
+- Comparators: paq8px v217 -8 measured locally; cmix v21 values are published figures, not re-run.
+- Languages: English, Italiano, Deutsch, Français, Español, Português, Nederlands, Polski, 日本語, 简体中文.
+- Source code is private; the site is static and ships no codec. Contact: francescopedulli@gmail.com.

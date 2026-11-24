@@ -1,0 +1,10 @@
+/* TEAM */
+Author: Francesco Pedulli
+Role: Mathematician, senior software engineer and researcher
+Location: Italy
+Contact: francescopedulli@gmail.com
+
+/* SITE */
+Languages: English, Italiano, Deutsch, Français, Español, Português, Nederlands, Polski, 日本語, 简体中文
+Last update: 2026-11-24
+Standards: HTML5, CSS3, schema.org, llms.txt
