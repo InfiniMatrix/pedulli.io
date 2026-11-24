@@ -41,13 +41,13 @@
   {
    "corpus": "calgary",
    "file": "geo",
-   "level": "promoted x16 L8/block64",
+   "level": "SRD 2026-11-24",
    "input": 102400,
-   "artifact": 44130,
-   "enc_s": 213.13,
-   "enc_rss_kib": 836516,
-   "dec_s": 2.95,
-   "dec_rss_kib": 796580,
+   "artifact": 40349,
+   "enc_s": 0.37,
+   "enc_rss_kib": 177228,
+   "dec_s": 0.3,
+   "dec_rss_kib": 177020,
    "exact": true
   },
   {
@@ -281,13 +281,13 @@
   {
    "corpus": "canterbury",
    "file": "kennedy.xls",
-   "level": "promoted x16 L8/block64",
+   "level": "SRD 2026-11-24",
    "input": 1029744,
-   "artifact": 11556,
-   "enc_s": 362.16,
-   "enc_rss_kib": 827620,
-   "dec_s": 16.88,
-   "dec_rss_kib": 798760,
+   "artifact": 8943,
+   "enc_s": 1.08,
+   "enc_rss_kib": 188560,
+   "dec_s": 0.75,
+   "dec_rss_kib": 185712,
    "exact": true
   },
   {
@@ -377,13 +377,13 @@
   {
    "corpus": "silesia",
    "file": "mr",
-   "level": "prior locked build L8/block64",
+   "level": "SRD 2026-11-24",
    "input": 9970564,
-   "artifact": 1863721,
-   "enc_s": 107.47,
-   "enc_rss_kib": 1388132,
-   "dec_s": 92.63,
-   "dec_rss_kib": 1385804,
+   "artifact": 1567859,
+   "enc_s": 23.41,
+   "enc_rss_kib": 408812,
+   "dec_s": 23.87,
+   "dec_rss_kib": 389296,
    "exact": true
   },
   {
@@ -473,13 +473,13 @@
   {
    "corpus": "silesia",
    "file": "x-ray",
-   "level": "prior locked build L8/block64",
+   "level": "SRD 2026-11-24",
    "input": 8474240,
-   "artifact": 3491278,
-   "enc_s": 162.78,
-   "enc_rss_kib": 798108,
-   "dec_s": 204.56,
-   "dec_rss_kib": 794680,
+   "artifact": 3480908,
+   "enc_s": 20.52,
+   "enc_rss_kib": 379740,
+   "dec_s": 22.4,
+   "dec_rss_kib": 363140,
    "exact": true
   },
   {

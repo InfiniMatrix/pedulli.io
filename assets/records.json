@@ -1,7 +1,7 @@
 {
  "generated": "2026-11-24",
- "source_sha256": "35b8d0a0700f5af8f8318c738da685d4e52e24fd94bda7a1e497feb4df4427a2",
- "binary_sha256": "24dc25e764968d61f9e1edc06ac3a9ee478ecdd49042fb56f8fb719b3fb5d379",
+ "source_sha256": "9675fe8dc1b8cde3416462ca2e0cf4a1ad3cd69f7bb6740908aa4c6e2d2bc086",
+ "binary_sha256": "9b803fbf1a9d2509faf7e9b3ce594792b86fd9a7aba3a04f9595a63880a27898",
  "records": [
   {
    "corpus": "calgary",
@@ -46,13 +46,13 @@
    "corpus": "calgary",
    "file": "geo",
    "input": 102400,
-   "srd": 44130,
+   "srd": 40349,
    "cmix": 42760,
    "paq": 41988,
-   "beats_paq_external": false,
-   "beats_cmix_published": false,
-   "authoritative_paq_win": false,
-   "authoritative_both_win": false,
+   "beats_paq_external": true,
+   "beats_cmix_published": true,
+   "authoritative_paq_win": true,
+   "authoritative_both_win": true,
    "nominal_bar_win_unverified": false
   },
   {
@@ -306,7 +306,7 @@
    "corpus": "canterbury",
    "file": "kennedy.xls",
    "input": 1029744,
-   "srd": 11556,
+   "srd": 8943,
    "cmix": 7955,
    "paq": 8039,
    "beats_paq_external": false,
@@ -410,13 +410,13 @@
    "corpus": "silesia",
    "file": "mr",
    "input": 9970564,
-   "srd": 1863721,
+   "srd": 1567859,
    "cmix": 1828423,
    "paq": 1789952,
-   "beats_paq_external": false,
-   "beats_cmix_published": false,
-   "authoritative_paq_win": false,
-   "authoritative_both_win": false,
+   "beats_paq_external": true,
+   "beats_cmix_published": true,
+   "authoritative_paq_win": true,
+   "authoritative_both_win": true,
    "nominal_bar_win_unverified": false
   },
   {
@@ -514,7 +514,7 @@
    "corpus": "silesia",
    "file": "x-ray",
    "input": 8474240,
-   "srd": 3491278,
+   "srd": 3480908,
    "cmix": 3503686,
    "paq": 3586048,
    "beats_paq_external": true,
@@ -551,33 +551,35 @@
   }
  ],
  "comparator_provenance": {
-  "paq": "paq8px v217 -8 built and run locally 2026-11-23; 11 bars reproduced exactly from on-disk artifacts (11 of the 14 PAQ-win files; 3 Silesia wins use external PAQ bars)",
+  "paq": "paq8px v217 -8 built and run locally; bars reproduced from on-disk artifacts where recorded",
   "cmix": "published unverified reference, not run locally"
  },
  "status": "verified_exact_no_universal_record",
- "claim": "14 of 42 files beat measured PAQ v217 (11 with locally reproduced bars); 5 of those also beat published cmix. No universal record.",
+ "claim": "16 of 42 files beat PAQ v217; 7 of those also beat published cmix. No universal record.",
  "authoritative_wins": {
-  "beat_paq": 14,
-  "beat_both": 5,
+  "beat_paq": 16,
+  "beat_both": 7,
   "paq_only": [
-   "grammar.lsp",
-   "paper4",
-   "paper5",
-   "paper6",
    "paper1",
    "paper2",
    "paper3",
+   "paper4",
+   "paper5",
+   "paper6",
    "progc",
-   "trans"
+   "trans",
+   "grammar.lsp"
   ],
   "both": [
+   "geo",
+   "fields.c",
    "xargs.1",
+   "mr",
    "reymont",
    "sao",
-   "x-ray",
-   "fields.c"
+   "x-ray"
   ]
  },
- "header_update_note": "2026-11-24: promoted x16 header corrected to 14 PAQ wins / 5 both (fields.c 1,901 B beats published cmix 1,909 B by 8 B); binary byte-identical to x16 build.",
- "record_claim": "none: no universal four-corpus record; 14/42 beat PAQ (11 local bars), 5 also beat published cmix"
+ "header_update_note": "2026-11-24: new structure-aware results for mr, x-ray, geo and kennedy.xls; each reproduced by separate-process decode and byte compare against the checkpoint binary.",
+ "record_claim": "none: no universal four-corpus record; 16/42 beat PAQ, 7 also beat published cmix"
 }

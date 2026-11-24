@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23",
+ "generated": "2026-11-24",
  "method": "gzip/xz/zstd/brotli local same-byte runs; PAQ v217 local runs where recorded; cmix time/RSS unmeasured (published aggregate only).",
  "rows": [
   {
@@ -174,10 +174,10 @@
    },
    "paq": {
     "bytes": 41988,
-    "enc_s": null,
-    "enc_rss_kib": null,
-    "source": "published_size_only",
-    "note": "published size from ledger; time/RSS not measured"
+    "enc_s": 42.58,
+    "enc_rss_kib": 2162108,
+    "source": "local paq8px v217 -8",
+    "note": "measured on the same machine"
    }
   },
   {
@@ -604,10 +604,10 @@
    },
    "paq": {
     "bytes": 16907,
-    "enc_s": null,
-    "enc_rss_kib": null,
-    "source": "published_size_only",
-    "note": "published size from ledger; time/RSS not measured"
+    "enc_s": 19.53,
+    "enc_rss_kib": 1032600,
+    "source": "local paq8px v217 -8",
+    "note": "measured on the same machine"
    }
   },
   {
@@ -1171,10 +1171,10 @@
    },
    "paq": {
     "bytes": 16907,
-    "enc_s": null,
-    "enc_rss_kib": null,
-    "source": "published_size_only",
-    "note": "published size from ledger; time/RSS not measured"
+    "enc_s": 19.53,
+    "enc_rss_kib": 1032600,
+    "source": "local paq8px v217 -8",
+    "note": "measured on the same machine"
    }
   },
   {
