@@ -2,7 +2,7 @@
 
 > SRD is an exact lossless compressor by Francesco Pedulli (Italy). Every published size is a complete artifact that was decoded in a separate process, byte-compared with the input and checked by SHA-256.
 
-Status on 2026-11-25: 18 of 42 benchmark files beat paq8px v217 -8 (measured on the same machine), 11 beat the published cmix v21 figure, and 9 beat both: geo, fields.c, grammar.lsp, xargs.1, mr, nci, reymont, sao, x-ray. No four-corpus record is claimed.
+Status on 2026-11-25: 19 of 42 benchmark files beat paq8px v217 -8 (measured on the same machine), 11 beat the published cmix v21 figure, and 9 beat both: geo, fields.c, grammar.lsp, xargs.1, mr, nci, reymont, sao, x-ray. No four-corpus record is claimed.
 
 ## Key pages
 - [Evidence: per-file ledger, time and memory](https://pedulli.io/evidence/)

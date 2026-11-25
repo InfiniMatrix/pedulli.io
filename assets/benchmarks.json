@@ -442,14 +442,15 @@
   {
    "corpus": "silesia",
    "file": "osdb",
-   "level": "prior locked build L8/block64",
+   "level": "SRD 2026-11-25 official (link 8: MyISAM rows)",
    "input": 10085684,
-   "artifact": 2119750,
-   "enc_s": 327.46,
-   "enc_rss_kib": 1388300,
-   "dec_s": 318.05,
-   "dec_rss_kib": 1386432,
-   "exact": true
+   "artifact": 1996632,
+   "enc_s": 325.23,
+   "enc_rss_kib": 1351104,
+   "dec_s": 227.14,
+   "dec_rss_kib": 1342640,
+   "exact": true,
+   "env": "E2"
   },
   {
    "corpus": "silesia",

@@ -1525,7 +1525,7 @@
     "enc_rss_kib": 105780
    },
    "cmix_published_bytes": 1963597,
-   "paq_published_bytes": 2001920,
+   "paq_published_bytes": 2007874,
    "cmix": {
     "bytes": 1963597,
     "enc_s": null,
@@ -1534,11 +1534,13 @@
     "note": "published size from ledger; time/RSS not measured"
    },
    "paq": {
-    "bytes": 2001920,
-    "enc_s": null,
-    "enc_rss_kib": null,
-    "source": "published_size_only",
-    "note": "published size from ledger; time/RSS not measured"
+    "bytes": 2007874,
+    "enc_s": 8301.57,
+    "enc_rss_kib": 2147128,
+    "dec_s": 4446.65,
+    "dec_rss_kib": 2413376,
+    "source": "local_paq8px_v217",
+    "note": "paq8px v217 -8, built from source, run on this machine; decoded in a separate process, exact"
    }
   },
   {

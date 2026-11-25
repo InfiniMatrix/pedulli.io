@@ -2,7 +2,7 @@
 
 > SRD is an exact lossless compressor by Francesco Pedulli (Italy). Every published size is a complete artifact that was decoded in a separate process, byte-compared with the input and checked by SHA-256.
 
-Status on 2026-11-25: 18 of 42 benchmark files beat paq8px v217 -8 (measured on the same machine), 11 beat the published cmix v21 figure, and 9 beat both: geo, fields.c, grammar.lsp, xargs.1, mr, nci, reymont, sao, x-ray. No four-corpus record is claimed.
+Status on 2026-11-25: 19 of 42 benchmark files beat paq8px v217 -8 (measured on the same machine), 11 beat the published cmix v21 figure, and 9 beat both: geo, fields.c, grammar.lsp, xargs.1, mr, nci, reymont, sao, x-ray. No four-corpus record is claimed.
 
 ## Key pages
 - [Evidence: per-file ledger, time and memory](https://pedulli.io/evidence/)
@@ -62,7 +62,7 @@ Status on 2026-11-25: 18 of 42 benchmark files beat paq8px v217 -8 (measured on 
 | silesia | mr | 9,970,564 | 1,567,859 | 1,828,423 | 1,789,952 | beats both |
 | silesia | nci | 33,553,445 | 608,377 | 781,325 | 787,456 | beats both |
 | silesia | ooffice | 6,152,192 | 1,433,201 | 1,221,977 | 1,233,920 | behind |
-| silesia | osdb | 10,085,684 | 2,119,750 | 1,963,597 | 2,001,920 | behind |
+| silesia | osdb | 10,085,684 | 1,996,632 | 1,963,597 | 2,007,874 | beats paq8px |
 | silesia | reymont | 6,627,202 | 619,121 | 704,817 | 713,728 | beats both |
 | silesia | samba | 21,606,400 | 2,089,641 | 1,588,875 | 1,614,848 | behind |
 | silesia | sao | 7,251,944 | 3,535,809 | 3,726,502 | 3,808,256 | beats both |
