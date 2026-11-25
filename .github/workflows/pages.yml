@@ -23,5 +23,7 @@ jobs:
       - uses: actions/upload-pages-artifact@v5
         with:
           path: .
+      # the artifact's metadata is not always visible to deploy-pages right after upload; wait before deploying
+      - run: sleep 20
       - id: deployment
         uses: actions/deploy-pages@v5
