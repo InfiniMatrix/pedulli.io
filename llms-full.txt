@@ -2,7 +2,7 @@
 
 > SRD is an exact lossless compressor by Francesco Pedulli (Italy). Every published size is a complete artifact that was decoded in a separate process, byte-compared with the input and checked by SHA-256.
 
-Status on 2026-11-25: 20 of 42 benchmark files beat paq8px v217 -8 (measured on the same machine), 11 beat the published cmix v21 figure, and 9 beat both: geo, fields.c, grammar.lsp, xargs.1, mr, nci, reymont, sao, x-ray. No four-corpus record is claimed.
+Status on 2026-11-25: 17 of 42 benchmark files beat paq8px v217 -8 (measured on the same machine), 11 beat the published cmix v21 figure, and 9 beat both: geo, fields.c, grammar.lsp, xargs.1, mr, nci, reymont, sao, x-ray. No four-corpus record is claimed.
 
 ## Key pages
 - [Evidence: per-file ledger, time and memory](https://pedulli.io/evidence/)
@@ -28,7 +28,7 @@ Status on 2026-11-25: 20 of 42 benchmark files beat paq8px v217 -8 (measured on 
 
 | Corpus | File | Input bytes | SRD bytes | cmix v21 (published) | paq8px v217 -8 (measured) | Status |
 |---|---|---:|---:|---:|---:|---|
-| calgary | bib | 111,261 | 19,518 | 17,180 | 19,574 | beats paq8px |
+| calgary | bib | 111,261 | 19,518 | 17,180 | 19,574 | behind |
 | calgary | book1 | 768,771 | 190,673 | 173,709 | 182,977 | behind |
 | calgary | book2 | 610,856 | 118,106 | 105,918 | 113,553 | behind |
 | calgary | geo | 102,400 | 40,349 | 42,760 | 41,988 | beats both |
@@ -43,12 +43,12 @@ Status on 2026-11-25: 20 of 42 benchmark files beat paq8px v217 -8 (measured on 
 | calgary | paper6 | 38,105 | 8,303 | — | 8,977 | beats paq8px |
 | calgary | pic | 513,216 | 20,700 | 21,883 | 16,907 | beats cmix |
 | calgary | progc | 39,611 | 8,369 | 8,193 | 8,863 | beats paq8px |
-| calgary | progl | 71,646 | 9,467 | 8,788 | 9,487 | beats paq8px |
+| calgary | progl | 71,646 | 9,467 | 8,788 | 9,487 | behind |
 | calgary | progp | 49,379 | 6,893 | 6,126 | 6,329 | behind |
 | calgary | trans | 93,695 | 10,767 | 9,990 | 10,966 | beats paq8px |
 | canterbury | alice29.txt | 152,089 | 34,325 | 31,076 | 33,037 | behind |
 | canterbury | asyoulik.txt | 125,179 | 32,320 | 29,434 | 31,486 | behind |
-| canterbury | cp.html | 24,603 | 5,349 | 4,746 | 5,405 | beats paq8px |
+| canterbury | cp.html | 24,603 | 5,349 | 4,746 | 5,405 | behind |
 | canterbury | fields.c | 11,150 | 1,793 | 1,909 | 2,029 | beats both |
 | canterbury | grammar.lsp | 3,721 | 739 | 771 | 865 | beats both |
 | canterbury | kennedy.xls | 1,029,744 | 8,940 | 7,955 | 8,039 | behind |

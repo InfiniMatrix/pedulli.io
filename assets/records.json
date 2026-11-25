@@ -10,9 +10,9 @@
    "srd": 19518,
    "cmix": 17180,
    "paq": 19574,
-   "beats_paq_external": true,
+   "beats_paq_external": false,
    "beats_cmix_published": false,
-   "authoritative_paq_win": true,
+   "authoritative_paq_win": false,
    "authoritative_both_win": false,
    "nominal_bar_win_unverified": false
   },
@@ -205,9 +205,9 @@
    "srd": 9467,
    "cmix": 8788,
    "paq": 9487,
-   "beats_paq_external": true,
+   "beats_paq_external": false,
    "beats_cmix_published": false,
-   "authoritative_paq_win": true,
+   "authoritative_paq_win": false,
    "authoritative_both_win": false,
    "nominal_bar_win_unverified": false
   },
@@ -270,9 +270,9 @@
    "srd": 5349,
    "cmix": 4746,
    "paq": 5405,
-   "beats_paq_external": true,
+   "beats_paq_external": false,
    "beats_cmix_published": false,
-   "authoritative_paq_win": true,
+   "authoritative_paq_win": false,
    "authoritative_both_win": false,
    "nominal_bar_win_unverified": false
   },
@@ -555,9 +555,9 @@
   "cmix": "published unverified reference, not run locally"
  },
  "status": "verified_exact_no_universal_record",
- "claim": "20 of 42 files beat paq8px v217; 9 of those also beat published cmix; 11 of 42 beat published cmix. No universal record.",
+ "claim": "17 of 42 files beat paq8px v217; 9 of those also beat published cmix; 11 of 42 beat published cmix. No universal record.",
  "authoritative_wins": {
-  "beat_paq": 20,
+  "beat_paq": 17,
   "beat_both": 9,
   "beat_cmix": 11,
   "both": [
@@ -573,5 +573,5 @@
   ]
  },
  "header_update_note": "2026-11-24: nci SDF molfile link 608,377 B; lazy allocation and input-sized tables reduce small-file peak RSS from 825 MB to about 455 MB with all affected files re-verified exact. Counts unchanged: 17 PAQ wins, 10 cmix wins, 8 both, 23 behind; no universal record.",
- "record_claim": "none: no universal four-corpus record; 20/42 beat paq8px, 9 also beat published cmix"
+ "record_claim": "none: no universal four-corpus record; 17/42 beat paq8px, 9 also beat published cmix"
 }

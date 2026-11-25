@@ -1,4 +1,4 @@
 PEDULLI
-Build: 2026-11-25-c
+Build: 2026-11-25-d
 Deployment: 2026-11-25
-Records: 20 of 42 beat paq8px, 11 beat cmix (published), 9 beat both, 22 distinct
+Records: 17 of 42 beat paq8px, 11 beat cmix (published), 9 beat both, 19 distinct
