@@ -10,9 +10,10 @@ window.ALLI18N={"en": {"ev_showing": "Showing 42 files", "dash_choose": "Choose 
  function cell(x){return '<td>'+x+'</td>'}
  function tr(c){return '<tr>'+c.join('')+'</tr>'}
  function val(x){return (x===null||x===undefined||x==='')?'<span class="mono">—</span>':'<span class="mono">'+fmt(x)+'</span>'}
- /* time/memory: green ONLY on SRD, and ONLY when SRD is the lowest measured value. */
- function axisCells(vs,unit){var nums=vs.filter(function(x){return typeof x==='number'&&isFinite(x)});var best=nums.length?Math.min.apply(null,nums):null;
-   var srdWins=(typeof vs[0]==='number'&&isFinite(vs[0])&&vs[0]===best);
+ /* time/memory: green ONLY on SRD, and ONLY when it beats the measured PAQ bar in the same row.
+    cmix time/RSS are not measured locally; gzip/xz/zstd/brotli are shown as faster context codecs. */
+ function axisCells(vs,unit){var srd=vs[0],paq=vs[1];
+   var srdWins=(typeof srd==='number'&&isFinite(srd)&&typeof paq==='number'&&isFinite(paq)&&srd<paq);
    return vs.map(function(x,i){if(typeof x!=='number'||!isFinite(x))return cell('<span class="mono">—</span>');
      return cell((srdWins&&i===0)?'<span class="mono best">'+fmt(x)+(unit||'')+'</span>':'<span class="mono">'+fmt(x)+(unit||'')+'</span>')})}
  function key(r){return (r.corpus||'')+'/'+(r.file||'')}
@@ -28,9 +29,9 @@ window.ALLI18N={"en": {"ev_showing": "Showing 42 files", "dash_choose": "Choose 
          var c=cm[key(r)]||{};
          var paq=(typeof r.paq==='number'&&r.srd<r.paq);
          var cmixpub=(typeof r.cmix==='number'&&r.srd<r.cmix);
-         var status=(paq&&cmixpub)?'<span class="yes">PAQ ✓ · cmix*</span>':(paq?'<span class="yes">PAQ ✓</span>':'—');
+         var status=(paq&&cmixpub)?'<span class="yes">PAQ ✓ · cmix ✓</span>':(paq?'<span class="yes">PAQ ✓</span>':(cmixpub?'<span class="yes">cmix ✓</span>':'—'));
          return tr([cell('<span class="mono">'+r.corpus+'</span>'),cell('<span class="mono">'+r.file+'</span>'),
-           cell(val(r.input)),cell('<b class="mono">'+fmt(r.srd)+'</b>'),cell(val(r.cmix)),cell(val(r.paq)),
+           cell(val(r.input)),cell('<b class="mono">'+fmt(r.srd)+'</b>'),cell(val(r.cmix)),cell(val(r.paq)+((c.paq&&String(c.paq.source||'').indexOf('local')===0)?'':'†')),
            cell(c.zstd&&val(c.zstd.bytes)),cell(c.xz&&val(c.xz.bytes)),cell(c.brotli&&val(c.brotli.bytes)),
            cell(c.gzip&&val(c.gzip.bytes)),cell(status)]);
        }).join('');
@@ -60,3 +61,30 @@ window.ALLI18N={"en": {"ev_showing": "Showing 42 files", "dash_choose": "Choose 
  function hex(b){return Array.prototype.map.call(new Uint8Array(b),function(x){return ('0'+x.toString(16)).slice(-2)}).join('')}
  document.addEventListener('DOMContentLoaded',function(){initLedger();initAxes()});
 })();
+/* 2026-11-24c: mobile menu, language picker close, sortable tables */
+(function(){
+ 'use strict';
+ document.addEventListener('DOMContentLoaded',function(){
+  var h=document.querySelector('.site-head'),b=document.querySelector('.menu-btn');
+  if(h&&b)b.addEventListener('click',function(){var o=h.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false')});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(h)h.classList.remove('open');if(b)b.setAttribute('aria-expanded','false');var d=document.querySelector('details.langs[open]');if(d)d.removeAttribute('open')}});
+  document.addEventListener('click',function(e){var d=document.querySelector('details.langs[open]');if(d&&!d.contains(e.target))d.removeAttribute('open')});
+  var num=function(t){var x=(t||'').replace(/[^0-9.\-−]/g,'').replace('−','-');return x===''||isNaN(+x)?null:+x};
+  Array.prototype.forEach.call(document.querySelectorAll('.scroll table'),function(t){
+   var ths=t.querySelectorAll('thead th');
+   Array.prototype.forEach.call(ths,function(th,i){th.setAttribute('data-sort','');th.setAttribute('tabindex','0');
+    var go=function(){var tb=t.tBodies[0];if(!tb)return;var asc=th.getAttribute('aria-sort')!=='ascending';
+     Array.prototype.forEach.call(ths,function(x){x.removeAttribute('aria-sort')});th.setAttribute('aria-sort',asc?'ascending':'descending');
+     var rs=Array.prototype.slice.call(tb.rows);rs.sort(function(a,c){var x=a.cells[i]?a.cells[i].textContent:'',y=c.cells[i]?c.cells[i].textContent:'';var p=num(x),q=num(y);
+      var r=(p!==null&&q!==null)?p-q:(p===null&&q!==null?1:(q===null&&p!==null?-1:x.localeCompare(y)));return asc?r:-r});
+     rs.forEach(function(r){tb.appendChild(r)})};
+    th.addEventListener('click',go);th.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}})})});
+ });
+})();
+
+/* theme: dark by default, light on request, remembered per visitor */
+(function(){document.addEventListener('DOMContentLoaded',function(){var b=document.querySelector('.theme-btn');if(!b)return;
+ b.addEventListener('click',function(){var r=document.documentElement,l=r.getAttribute('data-theme')!=='light';
+  if(l)r.setAttribute('data-theme','light');else r.removeAttribute('data-theme');
+  try{localStorage.setItem('theme',l?'light':'dark')}catch(e){}
+  b.setAttribute('aria-pressed',l?'true':'false')})})})();

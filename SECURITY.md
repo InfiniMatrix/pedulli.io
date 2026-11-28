@@ -1,6 +1,6 @@
 # Security disclosure
 
-Scope: the public pedulli.io static site. No executable implementation is shipped to the browser.
+Scope: the public pedulli.io static site. No executable codec is shipped to the browser.
 Report vulnerabilities privately to francescopedulli@gmail.com. Do not publish exploit details before a fix is available.
 
 The public origin intentionally contains no source code, build scripts, debug data, source maps,
