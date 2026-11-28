@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-24",
- "method": "gzip -9 / xz -9 / zstd / brotli local same-byte runs; paq8px v217 -8 local runs where source is local_paq8px_v217; cmix published sizes only.",
+ "provenance_note": "gzip/xz/zstd/brotli local same-byte runs; PAQ v217 local runs where recorded; cmix time/RSS unmeasured (published aggregate only).",
  "rows": [
   {
    "corpus": "calgary",
@@ -346,12 +346,10 @@
    },
    "paq": {
     "bytes": 12349,
-    "enc_s": 37.06,
-    "enc_rss_kib": 1508164,
-    "dec_s": 43.83,
-    "dec_rss_kib": 1496256,
-    "source": "local_paq8px_v217",
-    "note": "paq8px v217 -8, built from source, run on this machine; decoded in a separate process, exact"
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
    }
   },
   {
@@ -391,12 +389,10 @@
    },
    "paq": {
     "bytes": 19531,
-    "enc_s": 93.32,
-    "enc_rss_kib": 1401152,
-    "dec_s": 124.32,
-    "dec_rss_kib": 1375388,
-    "source": "local_paq8px_v217",
-    "note": "paq8px v217 -8, built from source, run on this machine; decoded in a separate process, exact"
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
    }
   },
   {
@@ -436,12 +432,10 @@
    },
    "paq": {
     "bytes": 12380,
-    "enc_s": 45.88,
-    "enc_rss_kib": 1418704,
-    "dec_s": 32.17,
-    "dec_rss_kib": 1459304,
-    "source": "local_paq8px_v217",
-    "note": "paq8px v217 -8, built from source, run on this machine; decoded in a separate process, exact"
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
    }
   },
   {
@@ -481,12 +475,10 @@
    },
    "paq": {
     "bytes": 3971,
-    "enc_s": 14.3,
-    "enc_rss_kib": 1454400,
-    "dec_s": 15.93,
-    "dec_rss_kib": 1454272,
-    "source": "local_paq8px_v217",
-    "note": "paq8px v217 -8, built from source, run on this machine; decoded in a separate process, exact"
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
    }
   },
   {
@@ -526,12 +518,10 @@
    },
    "paq": {
     "bytes": 3690,
-    "enc_s": 16.23,
-    "enc_rss_kib": 1443032,
-    "dec_s": 16.72,
-    "dec_rss_kib": 1443264,
-    "source": "local_paq8px_v217",
-    "note": "paq8px v217 -8, built from source, run on this machine; decoded in a separate process, exact"
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
    }
   },
   {
@@ -571,12 +561,10 @@
    },
    "paq": {
     "bytes": 8977,
-    "enc_s": 62.04,
-    "enc_rss_kib": 1550284,
-    "dec_s": 33.48,
-    "dec_rss_kib": 1530304,
-    "source": "local_paq8px_v217",
-    "note": "paq8px v217 -8, built from source, run on this machine; decoded in a separate process, exact"
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
    }
   },
   {
@@ -659,12 +647,10 @@
    },
    "paq": {
     "bytes": 8863,
-    "enc_s": 25.71,
-    "enc_rss_kib": 1564736,
-    "dec_s": 26.71,
-    "dec_rss_kib": 1558336,
-    "source": "local_paq8px_v217",
-    "note": "paq8px v217 -8, built from source, run on this machine; decoded in a separate process, exact"
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
    }
   },
   {
@@ -704,12 +690,10 @@
    },
    "paq": {
     "bytes": 9487,
-    "enc_s": 44.78,
-    "enc_rss_kib": 1518076,
-    "dec_s": 57.14,
-    "dec_rss_kib": 1484992,
-    "source": "local_paq8px_v217",
-    "note": "paq8px v217 -8, built from source, run on this machine; decoded in a separate process, exact"
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
    }
   },
   {
@@ -970,12 +954,10 @@
    },
    "paq": {
     "bytes": 2029,
-    "enc_s": 15.57,
-    "enc_rss_kib": 1335488,
-    "dec_s": 17.22,
-    "dec_rss_kib": 1335360,
-    "source": "local_paq8px_v217",
-    "note": "paq8px v217 -8, built from source, run on this machine; decoded in a separate process, exact"
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
    }
   },
   {
@@ -1014,13 +996,13 @@
     "note": "published size from ledger; time/RSS not measured"
    },
    "paq": {
-    "bytes": 865,
-    "enc_s": 9.28,
-    "enc_rss_kib": 1040576,
-    "dec_s": 7.73,
-    "dec_rss_kib": 1039984,
+    "bytes": 866,
+    "enc_s": 2.369,
+    "enc_rss_kib": 388032.0,
     "source": "local_paq8px_v217",
-    "note": "paq8px v217 -8, built from source, run on this machine; decoded in a separate process, exact"
+    "note": "paq8px v217 -1, local same-byte run, exact restore, separate process",
+    "dec_s": 1.361,
+    "dec_rss_kib": 387776.0
    }
   },
   {
@@ -1275,12 +1257,10 @@
    },
    "paq": {
     "bytes": 1297,
-    "enc_s": 1143.8,
-    "enc_rss_kib": 1090816,
-    "dec_s": 630.02,
-    "dec_rss_kib": 1135520,
-    "source": "local_paq8px_v217",
-    "note": "paq8px v217 -8, built from source, run on this machine; decoded in a separate process, exact"
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
    }
   },
   {
@@ -1525,7 +1505,7 @@
     "enc_rss_kib": 105780
    },
    "cmix_published_bytes": 1963597,
-   "paq_published_bytes": 2007874,
+   "paq_published_bytes": 2001920,
    "cmix": {
     "bytes": 1963597,
     "enc_s": null,
@@ -1534,13 +1514,11 @@
     "note": "published size from ledger; time/RSS not measured"
    },
    "paq": {
-    "bytes": 2007874,
-    "enc_s": 8301.57,
-    "enc_rss_kib": 2147128,
-    "dec_s": 4446.65,
-    "dec_rss_kib": 2413376,
-    "source": "local_paq8px_v217",
-    "note": "paq8px v217 -8, built from source, run on this machine; decoded in a separate process, exact"
+    "bytes": 2001920,
+    "enc_s": null,
+    "enc_rss_kib": null,
+    "source": "published_size_only",
+    "note": "published size from ledger; time/RSS not measured"
    }
   },
   {

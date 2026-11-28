@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-26",
- "source_sha256": "c274935973fd2d4ff80cfa246c575126be21d8fa0367c4623d4d029273b04b2b",
- "binary_sha256": "8a8b60aa0ec05af2022643c0e33ed949d0a0bed45400d710895b41e106c5ba59",
+ "generated": "2026-11-27",
+ "source_sha256": "0bfeeb1e6c733307608e550273a5f8f096472d4f5ef5227cf976cfbb9b559cb6",
+ "binary_sha256": "2ba9fbacd603825e57674308f273d8713e622ca4ad2cbc7839ba4869f399c718",
  "records": [
   {
    "corpus": "calgary",
    "file": "bib",
    "input": 111261,
-   "srd": 19690,
+   "srd": 19494,
    "cmix": 17180,
    "paq": 19574,
-   "beats_paq_external": false,
+   "beats_paq_external": true,
    "beats_cmix_published": false,
-   "authoritative_paq_win": false,
+   "authoritative_paq_win": true,
    "authoritative_both_win": false,
    "nominal_bar_win_unverified": false
   },
@@ -555,9 +555,9 @@
   "cmix": "published unverified reference, not run locally"
  },
  "status": "verified_exact_no_universal_record",
- "claim": "23 of 42 files beat paq8px v217; 10 of those also beat published cmix; 12 of 42 beat published cmix. No universal record.",
+ "claim": "24 of 42 files beat paq8px v217; 10 of those also beat published cmix; 12 of 42 beat published cmix. No universal record.",
  "authoritative_wins": {
-  "beat_paq": 23,
+  "beat_paq": 24,
   "beat_both": 10,
   "beat_cmix": 12,
   "both": [
@@ -573,6 +573,6 @@
    "x-ray"
   ]
  },
- "header_update_note": "2026-11-26: the Universal Primer Transformer (UPT) is the official engine. 42 of 42 files decode exactly in a separate process (byte compare and SHA-256). Total 49,294,393 octets against the previous engine's 51,353,425 (-4.01%); enwik8 17,774,413 (previous 19,576,888). 8 files are larger than with the previous engine (sao +4,140, obj2 +1,482, ooffice +706, nci +420, sum +394, obj1 +183, osdb +112, xargs.1 +3). No universal record.",
- "record_claim": "none: no universal four-corpus record; 23/42 beat paq8px, 10 also beat published cmix"
+ "header_update_note": "2026-11-27: Build 2026-11-27-a is the official engine. 42 of 42 files decode exactly in a separate process (byte compare and SHA-256). Total 49,294,197 octets. `bib` is 19,494 octets, 80 below the locally measured PAQ bar; cmix remains published and unverified. No universal record.",
+ "record_claim": "none: no universal four-corpus record; 24/42 beat paq8px, 10 also beat published cmix"
 }

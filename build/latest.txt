@@ -1,4 +1,8 @@
-PEDULLI
-Build: 2026-11-26-a
-Deployment: 2026-11-26
-Records: 23 of 42 beat paq8px, 12 beat cmix (published), 10 beat both, 25 distinct
+Build: 2026-11-27-a
+Source SHA-256: 0bfeeb1e6c733307608e550273a5f8f096472d4f5ef5227cf976cfbb9b559cb6
+Binary SHA-256: 2ba9fbacd603825e57674308f273d8713e622ca4ad2cbc7839ba4869f399c718
+Records: 24 of 42 beat paq8px, 12 beat cmix (published), 10 beat both, 26 distinct
+Total artifact size: 49,294,197 bytes
+No four-corpus or universal record is claimed.
+Localized pages ja/nl/pl/pt/zh refreshed 2026-11-28 from the authoritative local assets; build unchanged.
+Pilot generator, llms-full.txt, privacy footer, benchmark provenance and current reports finalized to 24/12/10 on 2026-11-28; build unchanged.
